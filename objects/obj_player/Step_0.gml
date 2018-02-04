@@ -1,9 +1,68 @@
 //movement logic
 depth = -y;
 var mouse_dir = point_direction(x, y, mouse_x, mouse_y);
+var cam_angle = camera_get_view_angle(control_camera.cam);
+
+image_angle = -cam_angle;
+
+if cam_angle >= 0 &&  cam_angle < 22.5  {
+	image_index = 3;
+}
+if cam_angle >= 22.5 &&  cam_angle < 67.5 {
+	image_index = 4;
+}
+if cam_angle >= 67.5 && cam_angle < 112.5 {
+	image_index = 5;
+}
+if cam_angle >= 112 &&  cam_angle < 157.5 {
+	image_index = 6;
+}
+if cam_angle >= 157.5 &&  cam_angle < 202.5 {
+	image_index = 7;
+}
+if cam_angle >= 202.5  && cam_angle < 247.5 {
+	image_index = 0;
+}
+if cam_angle >= 247.5  && cam_angle < 292.5 {
+	image_index = 1;
+}
+if cam_angle >= 292.5  && cam_angle < 337.5 {
+	image_index = 2;
+}
+if cam_angle >= 337.5 {
+	image_index = 3;
+}
+
+if cam_angle < 0 &&  cam_angle > -22.5  {
+	image_index = 3;
+}
+if cam_angle <= -22.5 &&  cam_angle > -67.5 {
+	image_index = 2;
+}
+if cam_angle <= -67.5 && cam_angle > -112.5 {
+	image_index = 1;
+}
+if cam_angle <= -112 &&  cam_angle > -157.5 {
+	image_index = 0;
+}
+if cam_angle <= -157.5 &&  cam_angle > -202.5 {
+	image_index = 7;
+}
+if cam_angle <= -202.5  && cam_angle > -247.5 {
+	image_index = 6;
+}
+if cam_angle <= -247.5  && cam_angle > -292.5 {
+	image_index = 5;
+}
+if cam_angle <= -292.5  && cam_angle > -337.5 {
+	image_index = 4;
+}
+if cam_angle <= -337.5 {
+	image_index = 3;
+}
+
 
 if mouse_check_button(mb_left) {
-	image_angle = mouse_dir;
 	
 	speed = 5;
 	direction = mouse_dir;
@@ -22,6 +81,3 @@ if mouse_check_button(mb_left) {
 if abs(x - destx) < 5 && abs(y - desty) < 5 {
 	speed = 0;
 }
-
-show_debug_message("x="+string(x)+" y="+string(y)+" destx="+string(destx)+" desty="+string(desty));
-

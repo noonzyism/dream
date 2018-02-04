@@ -10,3 +10,8 @@ view_set_hport(0, 768);
 cam = camera_create_view(300, 300, 1024, 768, 0, obj_player, -1, -1, 512, 384);
 
 view_set_camera(0, cam);
+
+cam_angle = 0;
+cam_velocity = 0;
+camera_set_view_angle(cam, cam_angle);
+

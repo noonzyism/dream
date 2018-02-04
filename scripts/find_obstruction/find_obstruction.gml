@@ -26,7 +26,7 @@
 	
 	var inner = sqr(vx) + sqr(vy);
 	
-	if (inner < 0) {
+	if (inner <= 0) {
 		points[0] = ox;
 		points[1] = oy;
 		return points;

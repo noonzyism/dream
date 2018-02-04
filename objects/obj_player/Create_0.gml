@@ -51,3 +51,5 @@ right_offset = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_i
 bottom_offset = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
 top_offset = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
 
+image_xscale = 0.5;
+image_yscale = 0.5;

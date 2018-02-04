@@ -4,4 +4,6 @@ hoveropts = ds_list_create(); //list of performable actions of items/things bein
 
 hoveropts_amount = 0;
 
+show_hoveropts = false;
+
 //example: "mine copper ore" or "use furnace" or "pick up logs"
