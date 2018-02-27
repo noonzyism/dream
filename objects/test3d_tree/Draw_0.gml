@@ -3,7 +3,7 @@
 var i = 0;
 while (i < 68) {
 	//draw_sprite_pos(spr_tree, i, x1 + i*sin(camx*pi/180), y1 - i*cos(camx*pi/180), x2 + i*sin(camx*pi/180), y2 - i*cos(camx*pi/180), x3 + i*sin(camx*pi/180), y3 - i*cos(camx*pi/180), x4 + i*sin(camx*pi/180), y4 - i*cos(camx*pi/180), 1); 
-	draw_sprite(spr_tree, i, x1 + (i*height)*sin(camx*pi/180), y1 - (i*height)*cos(camx*pi/180));
+	request_draw(spr_tree, i, x1 + (i*height)*sin(camx*pi/180), y1 - (i*height)*cos(camx*pi/180), 1, 1, 0, c_white, 1, -i);
 	i += 1;
 }
 

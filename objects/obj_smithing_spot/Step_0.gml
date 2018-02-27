@@ -1,5 +1,3 @@
-depth = -y;
-
 if (distance_to_point(mouse_x, mouse_y) < 2) && (notified_ui == false) {
 	notified_ui = true;
 	

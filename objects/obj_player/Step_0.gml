@@ -1,8 +1,7 @@
 //movement logic
-depth = -y;
 var mouse_dir = point_direction(x, y, mouse_x, mouse_y);
 var cam_angle = camera_get_view_angle(control_camera.cam);
-
+depth = -10;
 image_angle = -cam_angle;
 
 if cam_angle >= 0 &&  cam_angle < 22.5  {
@@ -81,3 +80,5 @@ if mouse_check_button(mb_left) {
 if abs(x - destx) < 5 && abs(y - desty) < 5 {
 	speed = 0;
 }
+
+show_debug_message("player depth="+string(depth));
