@@ -474,7 +474,7 @@
             "Key": "e8ece238-56dd-434c-95fb-3b4e324c19bf",
             "Value": {
                 "id": "88680fcf-283c-4737-a9ca-8d224da1981a",
-                "resourcePath": "objects\\control_camera\\control_camera.yy",
+                "resourcePath": "objects\\master_camera\\master_camera.yy",
                 "resourceType": "GMObject"
             }
         },

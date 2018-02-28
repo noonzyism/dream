@@ -2,7 +2,7 @@
     "id": "e8ece238-56dd-434c-95fb-3b4e324c19bf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "control_camera",
+    "name": "master_camera",
     "eventList": [
         {
             "id": "958c5466-1a07-4880-a3ee-c7486c2eda7b",

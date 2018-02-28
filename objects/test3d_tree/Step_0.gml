@@ -1,5 +1,5 @@
-camx = camera_get_view_angle(control_camera.cam);
-camy = camera_get_view_angle(control_camera.cam);
+camx = camera_get_view_angle(master_camera.cam);
+camy = camera_get_view_angle(master_camera.cam);
 
 x1s = x1 - (camx/4);
 y1s = y1 - (camy/4);

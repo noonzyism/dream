@@ -1,6 +1,6 @@
 //movement logic
 var mouse_dir = point_direction(x, y, mouse_x, mouse_y);
-var cam_angle = camera_get_view_angle(control_camera.cam);
+var cam_angle = camera_get_view_angle(master_camera.cam);
 depth = -10;
 image_angle = -cam_angle;
 
