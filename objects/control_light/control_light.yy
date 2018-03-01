@@ -5,7 +5,17 @@
     "name": "control_light",
     "eventList": [
         {
-            "id": "c053a30b-b551-400a-ba03-b936d2c8b57d",
+            "id": "e4395232-4ebd-434f-937c-b0b359a31487",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d771b1e2-bfa9-4712-8473-851ff0532452"
+        },
+        {
+            "id": "ddb37f60-0a06-4909-b936-ffa79d64b700",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,13 +25,13 @@
             "m_owner": "d771b1e2-bfa9-4712-8473-851ff0532452"
         },
         {
-            "id": "e4395232-4ebd-434f-937c-b0b359a31487",
+            "id": "edbad3f9-4e4b-4683-8d23-d2d6a5ba1b40",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
+            "eventtype": 3,
             "m_owner": "d771b1e2-bfa9-4712-8473-851ff0532452"
         }
     ],
