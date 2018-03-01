@@ -6,7 +6,7 @@ cam_y = camera_get_view_y(master_camera.cam);
 //request_draw(sprite8, 0, cam_x + 16, cam_y + 16, 1.5, 1.5, 0, c_white, 0.95);
 
 //drawing mouse hover-over options
-
+/*
 if (hoveropts_amount > 0) {
 	if (show_hoveropts = false) {
 		var action = ds_list_find_value(hoveropts, 0);
@@ -33,13 +33,8 @@ while (i < hoveropts_amount) {
 	show_debug_message("hoveropts["+string(i)+"]="+string(ds_list_find_value(hoveropts, i)));
 	i += 1;
 }
+*/
 
-
-if (mouse_check_button(mb_left)) {
-	if (hoveropts_amount > 0) {
-		request_draw(sprite10, -1, mouse_x, mouse_y, 1, 1, 0, c_white, 1, depth);
-	}
-	else {
-		request_draw(sprite9, -1, mouse_x, mouse_y, 1, 1, 0, c_white, 1, depth);
-	}
+if (mouse_check_button_pressed(mb_left)) {
+	instance_activate_object(ui_cursor);
 }

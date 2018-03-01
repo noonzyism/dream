@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 surface_set_target(light_surface);
 draw_set_color(c_ltgray);
 draw_rectangle(0, 0, 2024, 2024, false);
