@@ -1,3 +1,8 @@
+if !surface_exists(light_surface) {
+	globalvar light_surface;
+	light_surface = surface_create(2024, 2024);
+}
+
 
 surface_set_target(light_surface);
 draw_set_color(c_ltgray);

@@ -63,6 +63,10 @@ if cam_angle <= -337.5 {
 
 if mouse_check_button(mb_left) {
 	
+	
+	destx = mouse_x;
+	desty = mouse_y;
+	/*
 	speed = 5;
 	direction = mouse_dir;
 	
@@ -75,10 +79,22 @@ if mouse_check_button(mb_left) {
 		destx = mouse_x;
 		desty = mouse_y;
 	}
+	*/
 }
 
-if abs(x - destx) < 5 && abs(y - desty) < 5 {
-	speed = 0;
+if abs(x - destx) > 5 || abs(y - desty) > 5 {
+	var vx = destx - x;
+	var vy = desty - y;
+	var inner = sqr(vx) + sqr(vy);
+	if (inner > 0) {
+		var dist = sqrt(inner);
+		var dx = (vx/dist) * velocity;
+		var dy = (vy/dist) * velocity;
+		if !obstruction_at(x + dx, y + dy) {
+			x += dx;
+			y += dy;
+		}
+	}
 }
 
 show_debug_message("player depth="+string(depth));

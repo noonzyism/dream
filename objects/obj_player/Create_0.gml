@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+//movement
 destx = x;
 desty = y;
+velocity = 5; //speed at which the player moves
 
 //setting initial skill levels
 levels[0] = 1;		//attack
