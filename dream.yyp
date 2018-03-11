@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2924b709-7f5d-48d7-8a24-632950669a96",
+            "Value": {
+                "id": "ac33357a-5f3f-42ba-aad9-8ed51ae0eb41",
+                "resourcePath": "objects\\master_time\\master_time.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "347bdd7f-16c4-4a45-92c9-f5b7d55e5993",
             "Value": {
                 "id": "5ecd26ff-7fff-4b35-939c-45f6b3732225",

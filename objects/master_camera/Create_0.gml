@@ -13,5 +13,6 @@ view_set_camera(0, cam);
 
 cam_angle = 0;
 cam_velocity = 0;
+cam_max_velocity = 3;
 camera_set_view_angle(cam, cam_angle);
 
