@@ -1,7 +1,8 @@
 //movement
 destx = x;
 desty = y;
-velocity = 5; //speed at which the player moves
+velocity = 6; //speed at which the player moves
+move_angle = 0;
 
 //setting initial skill levels
 levels[0] = 1;		//attack
