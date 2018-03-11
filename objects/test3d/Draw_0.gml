@@ -5,6 +5,7 @@ draw_sprite_pos(spr_castle, 0, x1, y1, x2, y2, x3, y3, x4, y4, 1);
 var i = 0;
 while (i < 118) {
 	draw_sprite_pos(spr_monu1, i, x1 + i*height*sin(camx*pi/180), y1 - i*height*cos(camx*pi/180), x2 + i*height*sin(camx*pi/180), y2 - i*height*cos(camx*pi/180), x3 + i*height*sin(camx*pi/180), y3 - i*height*cos(camx*pi/180), x4 + i*height*sin(camx*pi/180), y4 - i*height*cos(camx*pi/180), 1); 
+	//request_draw(spr_monu1, i, x1 + i*height*sin(camx*pi/180), y1 - i*height*cos(camx*pi/180), 1, 1, 0, c_white, 1, i);
 	i += 1;
 }
 

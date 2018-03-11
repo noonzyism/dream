@@ -11,5 +11,10 @@ while (ds_priority_size(drawstack) > 0) {
 	var rot = drawrequest[6];
 	var color = drawrequest[7];
 	var alpha = drawrequest[8];
+	
+	//gpu_set_tex_filter(interpolate?);
+	
+	image_speed = 0.2;
+
 	draw_sprite_ext(sprite, subimg, sprx, spry, xscale, yscale, rot, color, alpha);
 }

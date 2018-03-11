@@ -23,10 +23,10 @@ cam_angle += cam_velocity;
 
 if !keyboard_check(vk_left) && !keyboard_check(vk_right) {
 	if (cam_velocity > 0) {
-		cam_velocity -= 0.1;
+		cam_velocity -= 0.05;
 	}
 	if (cam_velocity < 0) {
-		cam_velocity += 0.1;
+		cam_velocity += 0.05;
 	}
 }
 

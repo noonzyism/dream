@@ -3,6 +3,7 @@ destx = x;
 desty = y;
 velocity = 3; //speed at which the player moves
 move_angle = 0;
+depth = -10;
 
 //setting initial skill levels
 levels[0] = 1;		//attack
