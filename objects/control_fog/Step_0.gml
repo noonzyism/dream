@@ -7,8 +7,8 @@ fogx[2] += fogspeed[2];
 fogx[3] += fogspeed[3];
 fogx[4] += fogspeed[4];
 */
-camx = camera_get_view_angle(master_camera.cam);
-camy = camera_get_view_angle(master_camera.cam);
+camx = global.cam_angle;
+camy = global.cam_angle;
 xmodifier = (60*height)*sin(camx*pi/180);
 ymodifier = (60*height)*cos(camx*pi/180);
 

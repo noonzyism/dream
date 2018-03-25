@@ -17,8 +17,8 @@ fogspeed[2] = random(3);
 fogspeed[3] = random(3);
 fogspeed[4] = random(3);
 */
-camx = camera_get_view_angle(master_camera.cam);
-camy = camera_get_view_angle(master_camera.cam);
+camx = global.cam_angle;
+camy = global.cam_angle;
 
 for (var i = 0; i < 42; i += 1) {
 	fogx[i] = random(1200) * -1;

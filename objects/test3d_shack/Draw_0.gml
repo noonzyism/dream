@@ -1,5 +1,6 @@
 //draw_sprite_pos(spr_castle, 10, x1s, y1s, x2s, y2s, x3s, y3s, x4s, y4s, 1);
 
+/*
 var i = 0;
 while (i < 21) {
 	//draw_sprite_pos(spr_tree, i, x1 + i*sin(camx*pi/180), y1 - i*cos(camx*pi/180), x2 + i*sin(camx*pi/180), y2 - i*cos(camx*pi/180), x3 + i*sin(camx*pi/180), y3 - i*cos(camx*pi/180), x4 + i*sin(camx*pi/180), y4 - i*cos(camx*pi/180), 1); 

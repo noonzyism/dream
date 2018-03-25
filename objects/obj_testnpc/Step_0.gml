@@ -1,4 +1,4 @@
-var cam_angle = camera_get_view_angle(master_camera.cam);
+var cam_angle = global.cam_angle;
 depth = -10;
 image_angle = -cam_angle;
 if (destx != x) && (desty != y) {

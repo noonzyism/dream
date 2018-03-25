@@ -1,9 +1,9 @@
 //movement
 destx = x;
 desty = y;
-velocity = 3; //speed at which the player moves
+velocity = 3.5; //speed at which the player moves
 move_angle = 0;
-depth = -10;
+depth = -8;
 
 //setting initial skill levels
 levels[0] = 1;		//attack
@@ -55,3 +55,5 @@ top_offset = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index
 
 image_xscale = 0.5;
 image_yscale = 0.5;
+
+mouse_dir = point_direction(x, y, mouse_x, mouse_y);

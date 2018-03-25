@@ -10,5 +10,5 @@
 	request[7]	= argument7; //color
 	request[8]	= argument8; //alpha
 	
-	ds_priority_add(master_draw.drawstack, request, argument9);
+	ds_priority_add(global.drawstack, request, argument9);
 }

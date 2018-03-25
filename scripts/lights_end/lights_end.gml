@@ -5,7 +5,7 @@ if (event_type == ev_draw) && (event_number == 0) {
 	surface_set_target(application_surface);
 	
 	gpu_set_blendmode_ext(bm_dest_color, bm_zero);
-	draw_surface(light.light_surface, 0, 0);
+	draw_surface(global.light_surface, 0, 0);
 	gpu_set_blendmode(bm_normal);
 	
 	surface_reset_target();

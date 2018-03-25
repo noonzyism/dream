@@ -1,11 +1,11 @@
 if (event_type == ev_draw) && (event_number == 0) {
-	if (!surface_exists(light.light_surface)) {
-		light.light_surface =  surface_create(1024, 1024);
+	if (!surface_exists(global.light_surface)) {
+		global.light_surface =  surface_create(1024, 1024);
 	}
 	
 	var cam = master_camera.cam;
 	
-	surface_set_target(light.light_surface);
+	surface_set_target(global.light_surface);
 	
 	//camera_apply(cam);
 	

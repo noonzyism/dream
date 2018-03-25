@@ -1,12 +1,12 @@
 //movement logic
-var mouse_dir = point_direction(x, y, mouse_x, mouse_y);
-var cam_angle = camera_get_view_angle(master_camera.cam);
+mouse_dir = point_direction(x, y, mouse_x, mouse_y);
+cam_angle = global.cam_angle;
 image_angle = -cam_angle;
 if (destx != x) && (desty != y) {
 	move_angle = point_direction(x, y, destx, desty) - 270;
 }
-var face_direction = (move_angle + cam_angle) mod 360;
-show_debug_message("face direction: "+string(face_direction));
+face_direction = (move_angle + cam_angle) mod 360;
+//show_debug_message("face direction: "+string(face_direction));
 
 if face_direction >= 0 &&  face_direction < 22.5  {
 	image_index = 3;
@@ -105,4 +105,4 @@ if abs(x - destx) > 5 || abs(y - desty) > 5 {
 	}
 }
 
-show_debug_message("player depth="+string(depth));
+//show_debug_message("player depth="+string(depth));

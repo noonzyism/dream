@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-cam_x = camera_get_view_x(master_camera.cam);
-cam_y = camera_get_view_y(master_camera.cam);
+cam_x = global.cam_x;
+cam_y = global.cam_y;
 
 //request_draw(sprite8, 0, cam_x + 16, cam_y + 16, 1.5, 1.5, 0, c_white, 0.95);
 
