@@ -45,13 +45,32 @@ levels[33] = 1;
 bag = ds_list_create();
 
 
-//collision-related vars
+//sprite/drawing variables
+spr_feet	= spr_nium_feet;
+spr_legs	= spr_nium_legs;
+spr_torso	= spr_nium_torso;
+spr_head	= spr_nium_head;
 
 //boundary offsets from the sprite origin
-left_offset = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
-right_offset = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
-bottom_offset = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
-top_offset = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
+left_feet_offset = sprite_get_bbox_left(spr_feet) - sprite_get_xoffset(spr_feet);
+right_feet_offset = sprite_get_bbox_right(spr_feet) - sprite_get_xoffset(spr_feet);
+bottom_feet_offset = sprite_get_bbox_bottom(spr_feet) - sprite_get_yoffset(spr_feet);
+top_feet_offset = sprite_get_bbox_top(spr_feet) - sprite_get_yoffset(spr_feet);
+
+left_legs_offset = sprite_get_bbox_left(spr_legs) - sprite_get_xoffset(spr_legs);
+right_legs_offset = sprite_get_bbox_right(spr_legs) - sprite_get_xoffset(spr_legs);
+bottom_legs_offset = sprite_get_bbox_bottom(spr_legs) - sprite_get_yoffset(spr_legs);
+top_legs_offset = sprite_get_bbox_top(spr_legs) - sprite_get_yoffset(spr_legs);
+
+left_torso_offset = sprite_get_bbox_left(spr_torso) - sprite_get_xoffset(spr_torso);
+right_torso_offset = sprite_get_bbox_right(spr_torso) - sprite_get_xoffset(spr_torso);
+bottom_torso_offset = sprite_get_bbox_bottom(spr_torso) - sprite_get_yoffset(spr_torso);
+top_torso_offset = sprite_get_bbox_top(spr_torso) - sprite_get_yoffset(spr_torso);
+
+left_head_offset = sprite_get_bbox_left(spr_head) - sprite_get_xoffset(spr_head);
+right_head_offset = sprite_get_bbox_right(spr_head) - sprite_get_xoffset(spr_head);
+bottom_head_offset = sprite_get_bbox_bottom(spr_head) - sprite_get_yoffset(spr_head);
+top_head_offset = sprite_get_bbox_top(spr_head) - sprite_get_yoffset(spr_head);
 
 image_xscale = 0.5;
 image_yscale = 0.5;

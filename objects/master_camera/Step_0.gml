@@ -31,4 +31,4 @@ camera_set_view_angle(global.cam, global.cam_angle);
 global.cam_x = camera_get_view_x(global.cam);
 global.cam_y = camera_get_view_y(global.cam);
 
-//show_debug_message("camspeed="+string(cam_velocity)+" cam_angle="+string(global.cam_angle));
+show_debug_message("view_y="+string(camera_get_view_y(global.cam))+" view_border_y="+string(camera_get_view_border_y(global.cam)));

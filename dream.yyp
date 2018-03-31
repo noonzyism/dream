@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0bde1517-a25f-486d-8775-ce754efa8ec3",
+            "Value": {
+                "id": "e5a7258f-d571-4bd3-897f-ed92766266d7",
+                "resourcePath": "sprites\\spr_nium_legs\\spr_nium_legs.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0fc02566-7d48-46dc-afea-d3666904a737",
             "Value": {
                 "id": "1e179ea3-28b0-4e57-a1f8-2f00a8d931a9",
@@ -83,6 +91,14 @@
             "Value": {
                 "id": "ff210ddc-d8a2-4f9e-95bd-d1b23bdaf1e9",
                 "resourcePath": "sprites\\spr_watertiles\\spr_watertiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "121371b4-bc94-4cf5-a73e-cf12602d509e",
+            "Value": {
+                "id": "726e2a9f-1554-418c-8226-ed500dae1712",
+                "resourcePath": "sprites\\spr_nium_feet\\spr_nium_feet.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -207,10 +223,26 @@
             }
         },
         {
+            "Key": "39bbef99-32c2-4d02-8635-ee0319f65fee",
+            "Value": {
+                "id": "98753fac-50b7-4b66-b1a7-c255ee5b0e4a",
+                "resourcePath": "sprites\\spr_nium_head\\spr_nium_head.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d931668-411c-4be7-b49a-a45e77f7075e",
             "Value": {
                 "id": "5922b0f8-f058-4acf-ba21-dbaefdc15680",
                 "resourcePath": "sprites\\spr_square_orange_64x\\spr_square_orange_64x.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ee7ada7-c2b2-44d0-a419-cf008a74b9fb",
+            "Value": {
+                "id": "5e8d044d-2d34-4e89-9d27-42969c294465",
+                "resourcePath": "sprites\\spr_nium_torso\\spr_nium_torso.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -356,6 +388,14 @@
                 "id": "cba0f5f0-cf3a-4069-a971-20c7f0349974",
                 "resourcePath": "views\\6ba9c9bf-a0c8-45c0-af44-2b432a9777d6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "79cf0b69-8441-4780-a8fc-5c431b0823cc",
+            "Value": {
+                "id": "5a3c06d7-ed26-41ce-90af-7af128c6e7e9",
+                "resourcePath": "sprites\\spr_nium2\\spr_nium2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -599,6 +639,14 @@
             }
         },
         {
+            "Key": "d9ec3ac9-d0d1-4b6e-afcd-8f76d4cc14f4",
+            "Value": {
+                "id": "cc134603-585b-442c-9007-286774945a44",
+                "resourcePath": "scripts\\within\\within.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da1eef7d-f32f-4bf1-9ce9-0f5a5d9626ac",
             "Value": {
                 "id": "0f77277d-0522-40ba-9fb6-6867372fc162",
@@ -652,6 +700,14 @@
                 "id": "737bf4c7-dd8b-4ffe-a072-27fa68ce7f42",
                 "resourcePath": "objects\\master_draw\\master_draw.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f27c3ed8-5ca5-4fda-a835-3a84eafa9015",
+            "Value": {
+                "id": "b3997e62-ead5-4094-bad6-2a6cd369f968",
+                "resourcePath": "scripts\\overlap\\overlap.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -718,7 +774,9 @@
         "f6d4b37c-cb19-4f2f-9c4d-c6df11ad1cf4",
         "a59ac0ab-f42c-44e6-b552-0a50d0a050ee",
         "8e9646d5-1e35-4174-a5e0-b029cf414417",
-        "f7c90663-6fa3-4134-a59a-7781a87691a6"
+        "f7c90663-6fa3-4134-a59a-7781a87691a6",
+        "d9ec3ac9-d0d1-4b6e-afcd-8f76d4cc14f4",
+        "f27c3ed8-5ca5-4fda-a835-3a84eafa9015"
     ],
     "tutorial": ""
 }

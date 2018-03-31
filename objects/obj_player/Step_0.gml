@@ -1,3 +1,5 @@
+//show_debug_message("x: "+string(x)+" y: "+string(y));
+
 //movement logic
 mouse_dir = point_direction(x, y, mouse_x, mouse_y);
 cam_angle = global.cam_angle;
