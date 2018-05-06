@@ -7,3 +7,5 @@ hoveropts_amount = 0;
 show_hoveropts = false;
 
 //example: "mine copper ore" or "use furnace" or "pick up logs"
+
+instance_create_depth(mouse_x, mouse_y, depth, ui_cursor);

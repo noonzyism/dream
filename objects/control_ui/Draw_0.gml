@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-cam_x = camera_get_view_x(control_camera.cam);
-cam_y = camera_get_view_y(control_camera.cam);
+cam_x = global.cam_x;
+cam_y = global.cam_y;
 
-//draw_sprite_ext(sprite8, 0, cam_x + 16, cam_y + 16, 1.5, 1.5, 0, c_white, 0.95);
+//request_draw(sprite8, 0, cam_x + 16, cam_y + 16, 1.5, 1.5, 0, c_white, 0.95);
 
 //drawing mouse hover-over options
-
+/*
 if (hoveropts_amount > 0) {
 	if (show_hoveropts = false) {
 		var action = ds_list_find_value(hoveropts, 0);
@@ -19,7 +19,7 @@ if (hoveropts_amount > 0) {
 		var i = 0;
 		while (i < hoveropts_amount) {
 			var action = ds_list_find_value(hoveropts, i);
-			draw_sprite(spr_dropdown_entry, -1, mouse_x + 24, mouse_y + (i*24));
+			request_draw(spr_dropdown_entry, -1, mouse_x + 24, mouse_y + (i*24), 1, 1, 0, c_white, 1, depth);
 			draw_text(mouse_x + 24, mouse_y + (i*24), action[2]);
 			i += 1;
 		}
@@ -33,13 +33,8 @@ while (i < hoveropts_amount) {
 	show_debug_message("hoveropts["+string(i)+"]="+string(ds_list_find_value(hoveropts, i)));
 	i += 1;
 }
+*/
 
-
-if (mouse_check_button(mb_left)) {
-	if (hoveropts_amount > 0) {
-		draw_sprite(sprite10, -1, mouse_x, mouse_y);
-	}
-	else {
-		draw_sprite(sprite9, -1, mouse_x, mouse_y);
-	}
+if (mouse_check_button_pressed(mb_left)) {
+	instance_activate_object(ui_cursor);
 }

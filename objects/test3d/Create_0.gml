@@ -7,8 +7,8 @@ y3 = y+100;
 x4 = x;
 y4 = y+100;
 
-cam_initx = camera_get_view_x(control_camera.cam);
-cam_inity = camera_get_view_y(control_camera.cam);
+cam_initx = global.cam_x;
+cam_inity = global.cam_y;
 
 show_debug_message("camx="+string(cam_initx)+" camy="+string(cam_inity));
 

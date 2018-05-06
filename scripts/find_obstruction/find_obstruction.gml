@@ -6,7 +6,7 @@
 //      x1,y1       second point on collision line, real
 //		tolerance	the lower the number, the more precise the detection
 {
-    var ox,oy,dx,dy, tolerance;
+    var ox,oy,dx,dy,tolerance;
     ox = argument0;
     oy = argument1;
     dx = argument2;
