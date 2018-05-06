@@ -1,6 +1,20 @@
 var cam_angle = global.cam_angle;
 depth = -10;
 image_angle = -cam_angle;
+
+
+/*
+TODO: make player shoving work nicely or design another approach for avoiding player-NPC sprite collisions
+buggy attempt at player "shoving"
+if (distance_to_object(obj_player) < 5) {
+	var pd = point_direction(obj_player.x, obj_player.y, x, y);  
+	x += lengthdir_x(5, pd);   
+	y += lengthdir_y(5, pd);
+}
+*/
+
+
+
 if (destx != x) && (desty != y) {
 	move_angle = point_direction(x, y, destx, desty) - 270;
 }

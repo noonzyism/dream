@@ -84,6 +84,7 @@ while (i < count) {
 			}
 		}
 		
+		//draw the sprite for this request
 		draw_sprite_ext(inst.sprite_index, layr, draw_x, draw_y, 1, 1, 0, color, 1);
 	}
 	else {

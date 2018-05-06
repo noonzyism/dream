@@ -10,3 +10,7 @@ height = 2;
 //testing 3d optimization shit
 //draw_3d(id);   //this assumes the calling object has a "height" property
 registered = false;
+
+//temporary shadow var
+//todo: instead pass some variable to draw request to determine whether to draw shadow or not
+projectShadow = false;

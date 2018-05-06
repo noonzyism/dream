@@ -39,6 +39,6 @@ gpu_set_blendmode(bm_normal);
 //TODO: make these draw requests less retarded
 
 if (registered == false) {
-	draw_3d_light(id, 60, -1);   //this assumes the calling object has a "height" property
+	draw_3d_light(id, global.light_level, -1);   //this assumes the calling object has a "height" property
 	registered = true;
 }
