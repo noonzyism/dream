@@ -1,8 +1,8 @@
 {
-    "id": "f6d4b37c-cb19-4f2f-9c4d-c6df11ad1cf4",
+    "id": "453f2200-487f-455e-a3cd-d76ce54f1f05",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "lights_end",
+    "name": "draw_request1",
     "IsCompatibility": false,
     "IsDnD": false
 }
