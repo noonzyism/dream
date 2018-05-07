@@ -123,4 +123,3 @@ if (!player_was_drawn) {
 */
 
 
-
