@@ -11,6 +11,8 @@ global.cam = camera_create_view(300, 300, 1024, 768, 0, obj_player, -1, -1, 450,
 global.cam_angle = 0;
 global.cam_x = 0;
 global.cam_y = 0;
+global.cam_xview = 0;
+global.cam_yview = 0;
 
 view_set_camera(0, global.cam);
 camera_set_view_angle(global.cam, global.cam_angle);

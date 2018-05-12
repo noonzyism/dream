@@ -5,36 +5,6 @@
     "name": "obj_woodcutting_spot",
     "eventList": [
         {
-            "id": "dba1eb2f-a1d1-4257-aeff-88fb0427b728",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "a4432345-7d76-49ac-9265-04120e8256e5"
-        },
-        {
-            "id": "c1106190-7448-43fb-84f1-b9840311ab1a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "a4432345-7d76-49ac-9265-04120e8256e5"
-        },
-        {
-            "id": "4f8ab4bc-acbc-4996-b25a-7ebf37e45b85",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "a4432345-7d76-49ac-9265-04120e8256e5"
-        },
-        {
             "id": "d0838ca8-428b-4532-83c4-4a8c5715ba18",
             "modelName": "GMEvent",
             "mvc": "1.0",

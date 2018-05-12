@@ -5,26 +5,6 @@
     "name": "obj_smithing_spot",
     "eventList": [
         {
-            "id": "e1f3771d-8c20-4852-8c80-fa532bf2061f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "e7b60797-9629-48d6-affc-ed02c7c01b20"
-        },
-        {
-            "id": "6fe6385b-2533-4c29-9f16-dde57169c6e4",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "e7b60797-9629-48d6-affc-ed02c7c01b20"
-        },
-        {
             "id": "7c7d52b9-9902-4470-b905-7388afee25c0",
             "modelName": "GMEvent",
             "mvc": "1.0",

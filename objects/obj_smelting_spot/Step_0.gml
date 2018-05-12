@@ -1,14 +1,26 @@
-if (distance_to_point(mouse_x, mouse_y) < 2) && (notified_ui == false) {
-	notified_ui = true;
+if (distance_to_point(mouse_x, mouse_y) < 2) {
+
+	var action;
+	action[0] = 11; //the alarm to call on the player for smelting action
+	action[1] = 0; //the alarm to call on this object for smelting action
 	
+	ui_add_opt(id, "furnace", "smelt ore at", action);
+	//ui_add_opt(id, "furnace", "smelt ore at", -1);
+	/*
 	action[0] = id;
 	action[1] = 0;
 	action[2] = "use furnace";
 	
 	ui_pos = ds_list_add(control_ui.hoveropts, action);
+	*/
 }
 
 
+
+
+
+
+/*
 if (distance_to_point(mouse_x, mouse_y) >= 2) && (notified_ui == true) {
 	notified_ui = false;
 	ds_list_delete(control_ui.hoveropts, ui_pos);

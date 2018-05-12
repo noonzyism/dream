@@ -1,1 +1,1 @@
-draw_3d(2); //2 is the spacing value to use in between sprite layers
+draw_3d(4); //2 is the spacing value to use in between sprite layers

@@ -1,10 +1,10 @@
 depth = -1000;
 
-hoveropts = ds_list_create(); //list of performable actions of items/things being moused over
+global.opts = ds_queue_create(); //list of performable actions of items/things being moused over
 
-hoveropts_amount = 0;
+opts_amount = 0;
 
-show_hoveropts = false;
+opts_show_all = false;
 
 //example: "mine copper ore" or "use furnace" or "pick up logs"
 

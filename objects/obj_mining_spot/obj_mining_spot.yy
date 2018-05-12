@@ -5,26 +5,6 @@
     "name": "obj_mining_spot",
     "eventList": [
         {
-            "id": "71b0badf-7e6c-4bc6-8f98-d5bb5ea1eb21",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "82ffe881-59c8-46c4-9e37-8baefc8c66c4"
-        },
-        {
-            "id": "4beb7f30-a9c1-4fd9-9bdd-e4132b3660df",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "82ffe881-59c8-46c4-9e37-8baefc8c66c4"
-        },
-        {
             "id": "8aba703d-2213-4fa6-99dc-3be5d6fb7c4d",
             "modelName": "GMEvent",
             "mvc": "1.0",
