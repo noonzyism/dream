@@ -1,0 +1,1 @@
+//player clicked on this mining spot

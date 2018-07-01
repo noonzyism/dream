@@ -20,6 +20,7 @@ while (ds_priority_size(global.drawstack) > 0) {
 }
 */
 
+draw_set_alpha(1);
 
 //TODO: hacky AF pls refactor
 light_was_drawn = false;

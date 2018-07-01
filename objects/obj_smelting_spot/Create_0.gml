@@ -3,7 +3,6 @@ ui_pos = -1;
 
 
 
-
 /*
 //lighting test code
 bwx = 49;

@@ -4,7 +4,7 @@ if (distance_to_point(mouse_x, mouse_y) < 2) {
 	action[0] = 11; //the alarm to call on the player for smelting action
 	action[1] = 0; //the alarm to call on this object for smelting action
 	
-	ui_add_opt(id, "furnace", "smelt ore at", action);
+	ui_add_opt(id, "furnace", "use ", action);
 	//ui_add_opt(id, "furnace", "smelt ore at", -1);
 	/*
 	action[0] = id;

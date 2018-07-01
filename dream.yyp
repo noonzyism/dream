@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "08079790-4df4-436e-9673-2cce1f6d1734",
+            "Value": {
+                "id": "f7f36caa-8a7a-4910-b0de-79931bf786d3",
+                "resourcePath": "sprites\\spr_pickaxe\\spr_pickaxe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "092975ec-e2b8-4e38-b60c-af1148d7b5a6",
             "Value": {
                 "id": "d5f110af-2c06-4256-afb5-f0e4c137dc22",
@@ -140,6 +148,14 @@
                 "id": "ff210ddc-d8a2-4f9e-95bd-d1b23bdaf1e9",
                 "resourcePath": "sprites\\spr_watertiles\\spr_watertiles.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "10f3072b-1b26-4095-a4e9-eae84e6aacbd",
+            "Value": {
+                "id": "f5c6a1c6-1876-428f-b187-105aa19275ec",
+                "resourcePath": "fonts\\f_stikta12\\f_stikta12.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -271,6 +287,14 @@
             }
         },
         {
+            "Key": "30dff877-9635-4157-bfa3-25c6381f1754",
+            "Value": {
+                "id": "5c521e34-6404-410c-ba30-42fb4f3c64c2",
+                "resourcePath": "fonts\\f_tales24\\f_tales24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "347bdd7f-16c4-4a45-92c9-f5b7d55e5993",
             "Value": {
                 "id": "5ecd26ff-7fff-4b35-939c-45f6b3732225",
@@ -391,6 +415,14 @@
             }
         },
         {
+            "Key": "3f01c10b-ef79-4327-b5ee-db3b8b134666",
+            "Value": {
+                "id": "ae2dadac-5a32-405a-ac67-c9c12512c9dc",
+                "resourcePath": "sprites\\spr_red_scim\\spr_red_scim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "447eb654-60c0-486d-aa76-c8d31e81dcec",
             "Value": {
                 "id": "909d36f6-a6c2-4a1b-8a50-49204ae32d59",
@@ -444,6 +476,14 @@
                 "id": "735ec782-3124-41f2-b6e8-0e7b52ddc571",
                 "resourcePath": "views\\4c9a4088-1851-4317-865f-ce0f26dce6a8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4d17f54d-654d-4054-88e5-f8ee088f13ca",
+            "Value": {
+                "id": "273d5ca4-b619-4f8c-87f7-5ee8b0a3c7fd",
+                "resourcePath": "objects\\ctrl_viewsettings\\ctrl_viewsettings.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -599,6 +639,14 @@
             }
         },
         {
+            "Key": "72cba5e7-4daf-4640-a7e1-cddfab5b0539",
+            "Value": {
+                "id": "5063dcda-3514-4263-87c8-4034c488e3c3",
+                "resourcePath": "objects\\obj_pickaxe_basic\\obj_pickaxe_basic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "74bdbeab-a0ff-4d85-a7bb-1b57111efbe3",
             "Value": {
                 "id": "a6cc2fc9-cad0-4a9d-8525-07f572b38611",
@@ -639,6 +687,14 @@
             }
         },
         {
+            "Key": "7c990886-b1ef-47a2-82e0-fb4f266e6f27",
+            "Value": {
+                "id": "434b6bec-e336-4db2-b35c-c50e04d154b8",
+                "resourcePath": "scripts\\notification\\notification.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7cf7a2f9-b6e5-4341-8481-4217e9c22b42",
             "Value": {
                 "id": "2d246d98-504a-44f7-aa55-d9c693cdc983",
@@ -652,6 +708,14 @@
                 "id": "f5f58763-449a-44de-9c64-d5b264a880a8",
                 "resourcePath": "tilesets\\tileset01\\tileset01.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "7e980365-872f-4628-bcfa-f7b1580755b1",
+            "Value": {
+                "id": "2ccd4777-9625-47c6-ad4a-8c0c3b70ac97",
+                "resourcePath": "scripts\\cancel_actions\\cancel_actions.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -807,6 +871,14 @@
             }
         },
         {
+            "Key": "a1f16ea9-83bc-4b53-b5ea-01ad7dccab7d",
+            "Value": {
+                "id": "b37eaef7-587e-4756-a480-525396193796",
+                "resourcePath": "sprites\\spr_rock\\spr_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a32aa617-71f1-43e7-8c6f-37aaa8d94251",
             "Value": {
                 "id": "d6ad6cba-fac6-4966-ad44-43b7b1cc6b6d",
@@ -868,6 +940,14 @@
                 "id": "d9984d08-5972-4e27-aa0c-09b94d3dcf4b",
                 "resourcePath": "sprites\\sprite2\\sprite2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "acacff55-8bf1-469f-a7ed-488bc820a5b9",
+            "Value": {
+                "id": "0bf4a2f2-6e54-4232-a506-43415581fcaa",
+                "resourcePath": "objects\\obj_scimitar_basic\\obj_scimitar_basic.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -943,6 +1023,14 @@
             }
         },
         {
+            "Key": "b9ed4bbe-3239-4672-97ea-b8c3c09b0ca0",
+            "Value": {
+                "id": "cee1a1f8-0780-4571-b7fc-cf7e786d6599",
+                "resourcePath": "fonts\\f_tales18\\f_tales18.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "bc8b1ef0-f022-4085-bff7-4f2a95297855",
             "Value": {
                 "id": "6e9e3a31-f916-46fa-93e0-864957d6a2c2",
@@ -980,6 +1068,14 @@
                 "id": "ffbbf49a-6167-46d6-89a4-f815d58d71ef",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd274487-b0a8-4a8b-80e4-8101644d59eb",
+            "Value": {
+                "id": "b4c68a92-7a0c-4174-ad51-982f02a25e2e",
+                "resourcePath": "fonts\\f_stikta18\\f_stikta18.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1272,7 +1368,9 @@
         "8cb32784-d10c-4a75-8f1e-c1a9014339c4",
         "361583c5-663e-4656-8b6a-5a3173277e7a",
         "e0ecb59e-fe55-46f8-b84b-ab71f31bc58d",
-        "a062ed68-78cf-4ad2-9561-39f3b6968d7d"
+        "a062ed68-78cf-4ad2-9561-39f3b6968d7d",
+        "7c990886-b1ef-47a2-82e0-fb4f266e6f27",
+        "7e980365-872f-4628-bcfa-f7b1580755b1"
     ],
     "tutorial": ""
 }
