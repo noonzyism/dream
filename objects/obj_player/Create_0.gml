@@ -83,6 +83,7 @@ levels[33] = 1;
 target = -1; //this variable will hold the instance id of the current thing being interacted with, set by ui click
 
 mining = false;		//mining-specific action variable (only set to true once mining is actually taking place)
+fishing = false;
 timer = -1;			//used to calculate how much time has elapsed doing the action
 
 ///////////////////////////////////////////////////////////////////////////////////////////////

@@ -87,7 +87,9 @@ if abs(x - destx) > 5 || abs(y - desty) > 5 {
 			//if something blocked our movement, stop
 			destx = x;
 			desty = y;
-			target = -1; //reset the target action/object (if there was one)
+			if (fishing == false) { //todo: re-work fishing event so that it doesn't rely on this condition to not reset the target obj (since fishing always leads to a collision event against the water)
+				target = -1; //reset the target action/object (if there was one)
+			}
 		}
 	}
 }

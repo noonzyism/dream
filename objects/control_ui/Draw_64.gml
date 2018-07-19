@@ -30,10 +30,14 @@ draw_set_alpha(1);
 screen_height = window_get_height(); //TODO: this doesn't work well for all window resizes, need to improve
 draw_set_color(c_black);
 draw_set_alpha(0.5);
-draw_rectangle(32, screen_height - 32, 68, screen_height - 68, false);
-draw_rectangle(70, screen_height - 32, 106, screen_height - 68, false);
-draw_rectangle(108, screen_height - 32, 144, screen_height - 68, false);
-draw_rectangle(146, screen_height - 32, 182, screen_height - 68, false);
+for (var i = 0; i < 5; i += 1)
+{
+	draw_rectangle(32 + i*38, screen_height - 32, 68 + i*38, screen_height - 68, false);
+}
+//draw_rectangle(32, screen_height - 32, 68, screen_height - 68, false);
+//draw_rectangle(70, screen_height - 32, 106, screen_height - 68, false);
+//draw_rectangle(108, screen_height - 32, 144, screen_height - 68, false);
+//draw_rectangle(146, screen_height - 32, 182, screen_height - 68, false);
 
 draw_set_alpha(1);
 
@@ -44,5 +48,5 @@ while (i < obj_player.bag_size) {
 	//show_debug_message("item is "+string(item));
 	draw_sprite(item[1], -1, 34 + j, screen_height - 66);
 	i += 1;
-	j += 36;
+	j += 38;
 }
