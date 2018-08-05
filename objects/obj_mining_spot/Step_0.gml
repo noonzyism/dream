@@ -1,15 +1,8 @@
-if (distance_to_point(mouse_x, mouse_y) < 2) && (notified_ui == false) {
-	notified_ui = true;
+if (distance_to_point(mouse_x, mouse_y) < 2) {
 
-	action[0] = id;
-	action[1] = 0;
-	action[2] = "mine stone";
+	var action;
+	action[0] = 9; //the alarm to call on the player for mining action
+	action[1] = 0; //the alarm to call on this object for mining action
 	
-	ui_pos = ds_list_add(control_ui.hoveropts, action);
-}
-
-
-if (distance_to_point(mouse_x, mouse_y) >= 2) && (notified_ui == true) {
-	notified_ui = false;
-	ds_list_delete(control_ui.hoveropts, ui_pos);
+	ui_add_opt(id, "ore", "mine ", action);
 }

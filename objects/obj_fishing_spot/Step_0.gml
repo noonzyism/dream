@@ -1,15 +1,21 @@
-if (distance_to_point(mouse_x, mouse_y) < 2) && (notified_ui == false) {
-	notified_ui = true;
+//every interact-able instance needs this snip of code
+
+if (distance_to_point(mouse_x, mouse_y) < 2) {
+
+	var action;
+	action[0] = 8; //the alarm to call on the player for fishing action
+	action[1] = 0; //the alarm to call on this object for fishing action
 	
-	action[0] = id;
-	action[1] = 0;
-	action[2] = "fish";
-	
-	ui_pos = ds_list_add(control_ui.hoveropts, action);
+	ui_add_opt(id, "fishing spot", "use ", action);
 }
 
+//change the fish this spot gives every second to a random possibility - there is probably a better way
+//to do this, but it'll do for now (rand once when it's actually fetched rather than constantly keeping track)
+var rand =  random(300);
 
-if (distance_to_point(mouse_x, mouse_y) >= 2) && (notified_ui == true) {
-	notified_ui = false;
-	ds_list_delete(control_ui.hoveropts, ui_pos);
+if (rand == 100) {
+	fish_info = fish[3]; //gold fish = 1/300 chance
+}
+else {
+	fish_info = fish[rand mod 3];
 }

@@ -1,19 +1,29 @@
-/// @description Insert description here
-// You can write your code in this editor
+global.game_width = 1280;
+global.game_height = 720;
+
+view_set_wport(0, global.game_width);
+view_set_hport(0, global.game_height);
+
 view_enabled = true;
 
 view_set_visible(0, true);
 
-view_set_wport(0, 1024);
-view_set_hport(0, 768);
-
-global.cam = camera_create_view(300, 300, 1024, 768, 0, obj_player, -1, -1, 450, 500);
+global.cam = camera_create_view(300, 300, global.game_width, global.game_height, 0, obj_player, -1, -1, global.game_width/2, global.game_height/2);
 global.cam_angle = 0;
 global.cam_x = 0;
 global.cam_y = 0;
+global.cam_xview = 0;
+global.cam_yview = 0;
 
 view_set_camera(0, global.cam);
 camera_set_view_angle(global.cam, global.cam_angle);
+camera_set_view_size(global.cam, global.game_width, global.game_height);
+
+surface_resize(application_surface, global.game_width, global.game_height);
+
+window_set_size(global.game_width, global.game_height);
+
+
 
 
 cam_velocity = 0;

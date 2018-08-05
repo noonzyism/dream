@@ -5,7 +5,17 @@
     "name": "obj_fishing_spot",
     "eventList": [
         {
-            "id": "909ce365-70cd-4242-a3cd-fcef20e36c01",
+            "id": "c3ac86f4-5d23-48bf-b3ec-2f559aa4da3e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "62b59566-7079-47de-8e52-84e39519b082"
+        },
+        {
+            "id": "41614454-93cf-4a6b-9eda-e29ddef2c38a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,23 +25,13 @@
             "m_owner": "62b59566-7079-47de-8e52-84e39519b082"
         },
         {
-            "id": "b2b1076b-b53a-4959-a127-feca5906f309",
+            "id": "8202b9b0-1ca1-477a-b3bb-b46a359a86b6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "62b59566-7079-47de-8e52-84e39519b082"
-        },
-        {
-            "id": "c3ac86f4-5d23-48bf-b3ec-2f559aa4da3e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
             "m_owner": "62b59566-7079-47de-8e52-84e39519b082"
         }
     ],

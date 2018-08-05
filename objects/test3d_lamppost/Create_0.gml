@@ -1,0 +1,1 @@
+draw_3d_light(2, 45); //2 is the spacing value to use in between sprite layers

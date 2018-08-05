@@ -1,0 +1,1 @@
+ds_stack_push(global.notifications, argument0);

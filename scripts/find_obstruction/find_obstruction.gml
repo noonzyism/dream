@@ -34,6 +34,7 @@
 	
 	var dist = sqrt(inner);
 	
+	//ex/uy = unit vectors multiplied by the tolerance
 	var ux = (vx/dist) * tolerance;
 	var uy = (vy/dist) * tolerance;
 	
