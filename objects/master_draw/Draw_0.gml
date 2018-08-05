@@ -21,6 +21,7 @@ while (ds_priority_size(global.drawstack) > 0) {
 */
 
 draw_set_alpha(1);
+gpu_set_tex_filter(false);
 
 //TODO: hacky AF pls refactor
 light_was_drawn = false;
@@ -81,7 +82,7 @@ while (i < count) {
 		}
 	}
 		
-	if (inst.y > obj_player.y) {
+	if (screen_y(inst) > screen_y(obj_player)) {
 		//player feet
 		if	(!player_drawn[0]
 			&& within(draw_x, draw_y, left_feet_bound, right_feet_bound, top_feet_bound, bottom_feet_bound))
@@ -146,3 +147,16 @@ if (light_was_drawn == false) {
 			light_was_drawn = true;
 		}
 }
+
+gpu_set_tex_filter(true);
+
+/*
+draw_set_color(c_red);
+draw_circle(obj_player.x + view_x, obj_player.y - view_y, 350, true);
+draw_line(obj_player.x, obj_player.y, obj_player.x + view_x, obj_player.y - view_y);
+draw_set_color(c_yellow);
+draw_line(mouse_x, mouse_y, obj_player.x + view_x, obj_player.y - view_y);
+
+show_debug_message("view_x="+string(global.game_width)+" view_y="+string(global.game_height));
+*/
+

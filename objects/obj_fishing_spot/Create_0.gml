@@ -6,3 +6,5 @@ fish[2] = ["Green Fish", spr_fish_green, -1];
 fish[3] = ["Gold Fish", spr_fish_gold, -1];
 
 fish_info = fish[0];
+
+xp = 5;

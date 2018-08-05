@@ -16,7 +16,14 @@ if (target != -1) { //maybe make a more comprehensive check that assures that th
 			bag_size += 1;
 			notification("Caught a " + string(item[0]));
 			
-		
+			//levels[8, 1] += irandom(target.xp); //increase XP
+			levels[8, 1] += 25;
+			if (levels[8, 1] > 100) {
+				levels[8, 1] = 0;
+				levels[8, 0] += 1;
+				notification("Your fishing level is now " + string(levels[8, 0]));
+			}
+			
 			fishing = false;
 			timer = -1;
 			alarm[8] = -1;
@@ -38,6 +45,7 @@ if (target != -1) { //maybe make a more comprehensive check that assures that th
 
 }
 else {
+	timer = -1;
 	fishing = false;
 	alarm[8] = -1;
 }

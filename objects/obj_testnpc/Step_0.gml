@@ -3,21 +3,34 @@ depth = -10;
 image_angle = -cam_angle;
 
 
-/*
-TODO: make player shoving work nicely or design another approach for avoiding player-NPC sprite collisions
-buggy attempt at player "shoving"
-if (distance_to_object(obj_player) < 5) {
-	var pd = point_direction(obj_player.x, obj_player.y, x, y);  
-	x += lengthdir_x(5, pd);   
-	y += lengthdir_y(5, pd);
-}
-*/
-
-
 
 if (destx != x) && (desty != y) {
 	move_angle = point_direction(x, y, destx, desty) - 270;
 }
+
+//TODO: make player shoving work nicely or design another approach for avoiding player-NPC sprite collisions
+//buggy attempt at player "shoving"
+if (distance_to_object(obj_player) < 1) {
+	var pd = point_direction(obj_player.x, obj_player.y, x, y);  
+	//x += lengthdir_x(7, pd);   
+	//y += lengthdir_y(7, pd);
+	if (lengthdir_x(2, pd) > lengthdir_y(2, pd)) {
+		desty += lengthdir_y(2, pd);
+	}
+	else {
+		destx += lengthdir_x(2, pd);
+	}
+	//destx += lengthdir_x(2, pd);
+	//desty += lengthdir_y(2, pd);
+	//velocity = 6;
+	move_angle = point_direction(x, y, obj_player.x, obj_player.y) - 270;
+}
+else {
+	velocity = 2;
+}
+
+
+//facing direction logic
 var face_direction = (move_angle + cam_angle) mod 360;
 
 if face_direction >= 0 &&  face_direction < 22.5  {
