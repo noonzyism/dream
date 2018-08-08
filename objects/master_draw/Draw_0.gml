@@ -32,6 +32,10 @@ player_drawn[3] = false;
 
 color = c_white;
 
+light_surface_x = global.cam_x - surface_offset_x;
+light_surface_y = global.cam_y - surface_offset_y;
+
+
 var i = 0;
 var count = ds_list_size(drawsequence);
 while (i < count) {
@@ -47,7 +51,7 @@ while (i < count) {
 	if (lighting) { //emit light
 		gpu_set_blendmode(bm_subtract);
 		surface_set_target(global.light_surface);
-		draw_ellipse_color(draw_x - radius, draw_y - radius, draw_x + radius, draw_y + radius, c_orange, c_black, false);
+		draw_ellipse_color(draw_x - radius - light_surface_x, draw_y - radius - light_surface_y, draw_x + radius - light_surface_x, draw_y + radius - light_surface_y, c_orange, c_black, false);
 		surface_reset_target();
 		gpu_set_blendmode(bm_normal);
 		surface_set_target(application_surface);
@@ -75,7 +79,7 @@ while (i < count) {
 		}
 		if surface_exists(global.light_surface) {
 			gpu_set_blendmode(bm_subtract);
-			draw_surface(global.light_surface, 0, 0);
+			draw_surface(global.light_surface, light_surface_x, light_surface_y);
 			gpu_set_blendmode(bm_normal);
 			light_was_drawn = true;
 			color = c_dkgray; //this sets the color for all sprites above the light surface to be dkgray TODO: base this color dynamically off the current lighting level (time of day)
@@ -142,7 +146,7 @@ if (light_was_drawn == false) {
 		}
 		if surface_exists(global.light_surface) {
 			gpu_set_blendmode(bm_subtract);
-			draw_surface(global.light_surface, 0, 0);
+			draw_surface(global.light_surface, light_surface_x, light_surface_y);
 			gpu_set_blendmode(bm_normal);
 			light_was_drawn = true;
 		}
@@ -156,7 +160,7 @@ draw_circle(obj_player.x + view_x, obj_player.y - view_y, 350, true);
 draw_line(obj_player.x, obj_player.y, obj_player.x + view_x, obj_player.y - view_y);
 draw_set_color(c_yellow);
 draw_line(mouse_x, mouse_y, obj_player.x + view_x, obj_player.y - view_y);
-
-show_debug_message("view_x="+string(global.game_width)+" view_y="+string(global.game_height));
 */
+show_debug_message("view_x="+string(camera_get_view_x(global.cam))+" view_y="+string(camera_get_view_y(global.cam)));
+
 

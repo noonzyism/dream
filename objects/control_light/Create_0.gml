@@ -1,6 +1,7 @@
 depth = -25;
 
-global.light_surface = surface_create(2024, 2024);
+//global.light_surface = surface_create(2024, 2024);
+global.light_surface = -1;
 
 radius = 164;
 

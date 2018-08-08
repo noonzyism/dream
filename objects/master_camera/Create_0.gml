@@ -12,8 +12,10 @@ global.cam = camera_create_view(300, 300, global.game_width, global.game_height,
 global.cam_angle = 0;
 global.cam_x = 0;
 global.cam_y = 0;
-global.cam_xview = 0;
-global.cam_yview = 0;
+
+//this value indicates the side length of the bounding box that fully covers the area of the rotating rectangular view (used for creating the light surface)
+//determined by calculating the view's hypotenuse
+global.view_diameter = ceil(sqrt(sqr(global.game_width) + sqr(global.game_height)));
 
 view_set_camera(0, global.cam);
 camera_set_view_angle(global.cam, global.cam_angle);

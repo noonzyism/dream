@@ -1,6 +1,7 @@
 //this recreates the surface if it was garbage collected (for example on minimize)
 if !surface_exists(global.light_surface) {
-	global.light_surface = surface_create(2024, 2024);
+	bounding_length = global.view_diameter;
+	global.light_surface = surface_create(bounding_length, bounding_length);
 }
 
 //if it's early morning or late evening - draw darkness

@@ -5,7 +5,8 @@ alarm[0] = flicker;
 //depth = -1;
 
 
-
+surface_offset_x = -1;
+surface_offset_y = -1;
 
 
 
