@@ -37,6 +37,12 @@ right_head_bound	= player_head_x + obj_player.right_head_offset;
 top_head_bound		= player_head_y + obj_player.top_head_offset;
 bottom_head_bound	= player_head_y + obj_player.bottom_head_offset;
 
+//these vals are for assuring the light surface gets drawn right in the center of the camera's focus to fully encompass the screen even when the view is rotated
+if (surface_offset_x == -1 || surface_offset_y == -1) {
+	surface_offset_x = (global.view_diameter - global.game_width)/2;
+	surface_offset_y = (global.view_diameter - global.game_height)/2;
+}
+
 //convert our drawstack (ordered by depth) to an iterable list for quick drawing
 if (ds_list_size(drawsequence) != ds_priority_size(global.drawstack_3d)) {
 	ds_list_clear(drawsequence);

@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 255,
+    "bbox_bottom": 319,
     "bbox_left": 0,
     "bbox_right": 511,
     "bbox_top": 0,
@@ -16,23 +16,23 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "b5251817-9650-4ec6-bc2d-9a850152711a",
+            "id": "632052e0-0a6f-4549-86ac-9f5ec2aba167",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "ec313903-7410-4c73-9691-95c3e00319e8",
             "compositeImage": {
-                "id": "300a8f17-3815-487f-9e09-d486daf7f29f",
+                "id": "d5822dec-b0fc-4a9d-b764-8770a3c7543b",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "b5251817-9650-4ec6-bc2d-9a850152711a",
+                "FrameId": "632052e0-0a6f-4549-86ac-9f5ec2aba167",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "25111ded-188c-4ac6-955a-6557b0996968",
+                    "id": "2078bb6e-cf00-4f00-ade7-587f10d6feff",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "b5251817-9650-4ec6-bc2d-9a850152711a",
+                    "FrameId": "632052e0-0a6f-4549-86ac-9f5ec2aba167",
                     "LayerId": "0822c0e7-df8f-4dd1-a5a5-1ca487f95f35"
                 }
             ]
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 256,
+    "height": 320,
     "layers": [
         {
             "id": "0822c0e7-df8f-4dd1-a5a5-1ca487f95f35",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 9,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -65,6 +65,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 512,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 425,
+    "yorig": 639
 }
