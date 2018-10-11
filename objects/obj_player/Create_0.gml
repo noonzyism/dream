@@ -6,34 +6,34 @@ move_angle = 0;
 depth = -8;
 
 //sprite/drawing variables
-spr_feet	= spr_nium_feet;
-spr_legs	= spr_nium_legs;
-spr_torso	= spr_nium_torso;
-spr_head	= spr_nium_head;
-
-//boundary offsets from the sprite origin
-left_feet_offset = sprite_get_bbox_left(spr_feet) - sprite_get_xoffset(spr_feet);
-right_feet_offset = sprite_get_bbox_right(spr_feet) - sprite_get_xoffset(spr_feet);
-bottom_feet_offset = sprite_get_bbox_bottom(spr_feet) - sprite_get_yoffset(spr_feet);
-top_feet_offset = sprite_get_bbox_top(spr_feet) - sprite_get_yoffset(spr_feet);
-
-left_legs_offset = sprite_get_bbox_left(spr_legs) - sprite_get_xoffset(spr_legs);
-right_legs_offset = sprite_get_bbox_right(spr_legs) - sprite_get_xoffset(spr_legs);
-bottom_legs_offset = sprite_get_bbox_bottom(spr_legs) - sprite_get_yoffset(spr_legs);
-top_legs_offset = sprite_get_bbox_top(spr_legs) - sprite_get_yoffset(spr_legs);
-
-left_torso_offset = sprite_get_bbox_left(spr_torso) - sprite_get_xoffset(spr_torso);
-right_torso_offset = sprite_get_bbox_right(spr_torso) - sprite_get_xoffset(spr_torso);
-bottom_torso_offset = sprite_get_bbox_bottom(spr_torso) - sprite_get_yoffset(spr_torso);
-top_torso_offset = sprite_get_bbox_top(spr_torso) - sprite_get_yoffset(spr_torso);
-
-left_head_offset = sprite_get_bbox_left(spr_head) - sprite_get_xoffset(spr_head);
-right_head_offset = sprite_get_bbox_right(spr_head) - sprite_get_xoffset(spr_head);
-bottom_head_offset = sprite_get_bbox_bottom(spr_head) - sprite_get_yoffset(spr_head);
-top_head_offset = sprite_get_bbox_top(spr_head) - sprite_get_yoffset(spr_head);
+spr_feet	= spr_player_feet;
+spr_legs	= spr_player_legs;
+spr_torso	= spr_player_torso;
+spr_head	= spr_player_head;
 
 image_xscale = 0.5;
 image_yscale = 0.5;
+
+//boundary offsets from the sprite origin
+left_feet_offset = (sprite_get_bbox_left(spr_feet) - sprite_get_xoffset(spr_feet)) * image_xscale * 1.5;
+right_feet_offset = (sprite_get_bbox_right(spr_feet) - sprite_get_xoffset(spr_feet)) * image_xscale * 1.5;
+bottom_feet_offset = (sprite_get_bbox_bottom(spr_feet) - sprite_get_yoffset(spr_feet)) * image_yscale * 1.5;
+top_feet_offset = (sprite_get_bbox_top(spr_feet) - sprite_get_yoffset(spr_feet)) * image_yscale * 1.5;
+
+left_legs_offset = (sprite_get_bbox_left(spr_legs) - sprite_get_xoffset(spr_legs)) * image_xscale * 1.5;
+right_legs_offset = (sprite_get_bbox_right(spr_legs) - sprite_get_xoffset(spr_legs)) * image_xscale * 1.5;
+bottom_legs_offset = (sprite_get_bbox_bottom(spr_legs) - sprite_get_yoffset(spr_legs)) * image_yscale * 1.5;
+top_legs_offset = (sprite_get_bbox_top(spr_legs) - sprite_get_yoffset(spr_legs)) * image_yscale * 1.5;
+
+left_torso_offset = (sprite_get_bbox_left(spr_torso) - sprite_get_xoffset(spr_torso)) * image_xscale;
+right_torso_offset = (sprite_get_bbox_right(spr_torso) - sprite_get_xoffset(spr_torso)) * image_xscale;
+bottom_torso_offset = (sprite_get_bbox_bottom(spr_torso) - sprite_get_yoffset(spr_torso)) * image_yscale;
+top_torso_offset = (sprite_get_bbox_top(spr_torso) - sprite_get_yoffset(spr_torso)) * image_yscale;
+
+left_head_offset = (sprite_get_bbox_left(spr_head) - sprite_get_xoffset(spr_head)) * image_xscale;
+right_head_offset = (sprite_get_bbox_right(spr_head) - sprite_get_xoffset(spr_head)) * image_xscale;
+bottom_head_offset = (sprite_get_bbox_bottom(spr_head) - sprite_get_yoffset(spr_head)) * image_yscale;
+top_head_offset = (sprite_get_bbox_top(spr_head) - sprite_get_yoffset(spr_head)) * image_yscale;
 
 mouse_dir = point_direction(x, y, mouse_x, mouse_y);
 
@@ -129,3 +129,6 @@ timer = -1;			//used to calculate how much time has elapsed doing the action
 
 bag = array_create(4, []);
 bag_size = 0;
+
+
+alarm[0] = 150;

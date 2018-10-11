@@ -8,6 +8,11 @@ var target, check_x, check_y, lbound, rbound, tbound, bbound;
 	tbound	= argument4;
 	bbound	= argument5;
 	
+	
+return point_in_rectangle(check_x, check_y, lbound, tbound, rbound, bbound);
+	
+	
+/*
 
 //not within the x bounds
 if (check_x < lbound) || (check_x > rbound) {

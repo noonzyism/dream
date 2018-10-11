@@ -1,7 +1,11 @@
-//TODO: this calculation is absurdly botched but it still does the job for now
+
 var inst = argument0;
 
 return point_distance(inst.x, inst.y, obj_player.x + global.view_upper_x, obj_player.y - global.view_upper_y);
+
+
+//CORRECT:
+//return point_distance(inst.x, inst.y, inst.x + global.view_upper_x, inst.y - global.view_upper_y);
 
 
 

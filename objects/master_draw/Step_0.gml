@@ -9,14 +9,20 @@ player_x		= obj_player.x;
 player_y		= obj_player.y;
 player_feet_x	= player_x;
 player_feet_y	= player_y;
-player_legs_x	= player_x + 6*xc;
-player_legs_y	= player_y - 6*yc;
-player_torso_x	= player_x + 25*xc;
-player_torso_y	= player_y - 25*yc;
-player_head_x	= player_x + 50*xc;
-player_head_y	= player_y - 50*yc;
+player_legs_x	= player_x + 7*xc;
+player_legs_y	= player_y - 7*yc;
+player_torso_x	= player_x + 24*xc;
+player_torso_y	= player_y - 24*yc;
+player_head_x	= player_x + 47*xc;
+player_head_y	= player_y - 47*yc;
 
 //some sprite box collision variables for the player
+
+feet_tr_x = player_feet_x + x_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
+feet_tr_y = player_feet_y + y_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
+feet_br_x = player_feet_x + x_offset(obj_player.right_feet_offset, obj_player.bottom_feet_offset);
+feet_br_y = player_feet_y + y_offset(obj_player.right_feet_offset, obj_player.bottom_feet_offset);
+
 left_feet_bound		= player_feet_x + obj_player.left_feet_offset;
 right_feet_bound	= player_feet_x + obj_player.right_feet_offset;
 top_feet_bound		= player_feet_y + obj_player.top_feet_offset;
@@ -36,6 +42,9 @@ left_head_bound		= player_head_x + obj_player.left_head_offset;
 right_head_bound	= player_head_x + obj_player.right_head_offset;
 top_head_bound		= player_head_y + obj_player.top_head_offset;
 bottom_head_bound	= player_head_y + obj_player.bottom_head_offset;
+
+
+
 
 //these vals are for assuring the light surface gets drawn right in the center of the camera's focus to fully encompass the screen even when the view is rotated
 if (surface_offset_x == -1 || surface_offset_y == -1) {

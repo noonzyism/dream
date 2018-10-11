@@ -6,9 +6,8 @@
 	var height		= argument1; //the height/level to draw the sprite at
 	var spacing		= argument2; //the spacing/segmenting between layers
 	var lighting	= argument3; //holds all lighting properties if this sprite is a light source
-//TODO: right now lighting is just a simple true or false, lighting properties are a fixed setting in master draw
-//		make lighting be an array and have variable lighting properties like bloom and radius
-	
+								 //TODO: right now lighting is just a simple true or false, lighting properties are a fixed setting in master draw
+								 //make lighting be an array and have variable lighting properties like bloom and radius
 	var request;
 	request[0] = caller;
 	request[1] = height;

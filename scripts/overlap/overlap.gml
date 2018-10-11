@@ -10,17 +10,13 @@ var lbound1, rbound1, tbound1, bbound1, lbound2, rbound2, tbound2, bbound2;
 	tbound2	= argument6;
 	bbound2	= argument7;
 	
-if (lbound1 > rbound2) {
+	
+//obvious cases
+if (lbound1 > rbound2 || lbound2 > rbound1) {
 	return false;
 }
 
-//not within the x bounds
-if (check_x < lbound) || (check_x > rbound) {
-	return false;
-}
-
-//not within the y bounds
-if (check_y < tbound) || (check_y > bbound) {
+if (tbound1 < bbound2 || tbound2 < bbound1) {
 	return false;
 }
 

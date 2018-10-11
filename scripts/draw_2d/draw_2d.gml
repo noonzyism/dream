@@ -10,6 +10,6 @@ draw_request(id, height, 1, false);
 /*
 var i = 0;
 while (i < layer_count) {
-	draw_request(id, i, spacing, false);
+	draw_request(id, i, spacing, false, false);
 	i += 1;
 }
