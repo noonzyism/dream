@@ -18,8 +18,8 @@ player_head_y	= player_y - 47*yc;
 
 //some sprite box collision variables for the player
 
-feet_tr_x = player_feet_x + x_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
-feet_tr_y = player_feet_y + y_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
+feet_tl_x = player_feet_x + x_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
+feet_tl_y = player_feet_y + y_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);
 feet_br_x = player_feet_x + x_offset(obj_player.right_feet_offset, obj_player.bottom_feet_offset);
 feet_br_y = player_feet_y + y_offset(obj_player.right_feet_offset, obj_player.bottom_feet_offset);
 
@@ -44,6 +44,11 @@ top_head_bound		= player_head_y + obj_player.top_head_offset;
 bottom_head_bound	= player_head_y + obj_player.bottom_head_offset;
 
 
+left_offset_x = x_offset(obj_player.left_torso_offset, 0);
+left_offset_y = y_offset(obj_player.left_torso_offset, 0);
+
+right_offset_x = x_offset(obj_player.right_torso_offset, 0);
+right_offset_y = y_offset(obj_player.right_torso_offset, 0);
 
 
 //these vals are for assuring the light surface gets drawn right in the center of the camera's focus to fully encompass the screen even when the view is rotated

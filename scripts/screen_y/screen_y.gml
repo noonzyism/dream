@@ -1,6 +1,16 @@
 
 var inst = argument0;
 
+//TESTING TODO: REMOVE
+if (inst == inst_72E894B) {
+	if (master_draw_in_foreground(inst)) {
+		return 100000;
+	}
+	else {
+		return -100000;
+	}
+}
+
 return point_distance(inst.x, inst.y, obj_player.x + global.view_upper_x, obj_player.y - global.view_upper_y);
 
 

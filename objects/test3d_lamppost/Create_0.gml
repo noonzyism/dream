@@ -1,4 +1,4 @@
-draw_3d_light(2, 45); //2 is the spacing value to use in between sprite layers
+draw_3d_light(1, 45); //2 is the spacing value to use in between sprite layers
 
 //these variables are required if using bound detect
 left_offset = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);

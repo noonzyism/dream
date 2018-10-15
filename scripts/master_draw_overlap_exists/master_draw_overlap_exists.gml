@@ -13,4 +13,8 @@ if (!bounddetect) {
 }
 */
 
-return rectangle_in_rectangle(draw_x + inst.left_offset, draw_y + inst.top_offset, draw_x + inst.right_offset, draw_y + inst.bottom_offset, argument0, argument2, argument1, argument3);
+//return point_in_circle(draw_x, draw_y, argument0, argument1, argument2);
+
+return rectangle_in_circle(draw_x + inst.left_offset, draw_y + inst.top_offset, draw_x + inst.right_offset, draw_y + inst.bottom_offset, argument0, argument1, argument2);
+
+//return rectangle_in_rectangle(draw_x + inst.left_offset, draw_y + inst.top_offset, draw_x + inst.right_offset, draw_y + inst.bottom_offset, argument0, argument2, argument1, argument3);
