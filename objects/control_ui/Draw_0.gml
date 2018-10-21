@@ -9,10 +9,10 @@ draw_set_alpha(1);
 if (mouse_check_button_pressed(mb_left)) {
 	instance_activate_object(ui_cursor);
 	if (ds_queue_size(global.opts) > 0) {
-		ui_cursor.sprite_index = sprite10;
+		ui_cursor.sprite_index = spr_cursor_action;
 	}
 	else {
-		ui_cursor.sprite_index = sprite9;
+		ui_cursor.sprite_index = spr_cursor;
 	}
 }
 
