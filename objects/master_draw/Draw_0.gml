@@ -48,7 +48,6 @@ while (i < count) {
 		if (!player_drawn[3]) {
 			draw_sprite_ext(player_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
-			show_debug_message("drawing player at max height 50");
 		}
 	}
 	
@@ -74,7 +73,7 @@ while (i < count) {
 	}
 		
 	//if (screen_y(inst) > screen_y(obj_player)) {
-	if (master_draw_in_foreground(inst)) {
+	if (point_distance(obj_player.x, obj_player.y, inst.x, inst.y) < 500 && master_draw_in_foreground(inst)) {
 		//player feet
 		if	(!player_drawn[0]
 			&& master_draw_overlap_exists(player_feet_x, player_feet_y, 13))
@@ -97,7 +96,6 @@ while (i < count) {
 		{
 			draw_sprite_ext(player_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[2] = true;
-			draw_circle(inst.x, inst.y, 50, true);
 		}
 		
 		//player head
@@ -106,7 +104,6 @@ while (i < count) {
 		{
 			draw_sprite_ext(player_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
-			show_debug_message("drawing player at max height "+string(height));
 		}
 	}
 		
@@ -128,13 +125,6 @@ if (light_was_drawn == false) {
 gpu_set_tex_filter(true);
 
 
-
-draw_set_color(c_green);
-
-//draw_circle(player_feet_x, player_feet_y, 13, true);
-//draw_circle(player_legs_x, player_legs_y, 13, true);
-//draw_circle(player_torso_x, player_torso_y, 20, true);
-//draw_circle(player_head_x, player_head_y, 18, true);
 
 
 /*

@@ -1,12 +1,22 @@
-//mining action
+/// @description mining action
 
 if (target != -1) { //maybe make a more comprehensive check that assures that the target object is a mine-able rock/relevant to the action
 	
 	if (distance_to_object(target) < 1) {
 		if (mining != true) {
-			mining = true;
-			timer = 90;
-			notification("Mining...");
+			if (bag_size < max_bag_size) {
+				if (has_pickaxe()) {
+					mining = true;
+					timer = 90;
+					notification("Mining...");
+				}
+				else {
+					notification("You don't have a pickaxe!");
+				}
+			}
+			else {
+				notification("Inventory is full!");
+			}
 		}
 		
 		if ((mining == true) && (timer == 0)) {

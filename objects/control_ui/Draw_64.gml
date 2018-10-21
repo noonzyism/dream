@@ -27,25 +27,20 @@ draw_set_alpha(1);
 //inventory
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-screen_height = window_get_height(); //TODO: this doesn't work well for all window resizes, need to improve
+screen_height = window_get_height();
 draw_set_color(c_black);
 draw_set_alpha(0.5);
-for (var i = 0; i < 5; i += 1)
+for (var i = 0; i < obj_player.max_bag_size; i += 1)
 {
 	draw_rectangle(32 + i*38, screen_height - 32, 68 + i*38, screen_height - 68, false);
 }
-//draw_rectangle(32, screen_height - 32, 68, screen_height - 68, false);
-//draw_rectangle(70, screen_height - 32, 106, screen_height - 68, false);
-//draw_rectangle(108, screen_height - 32, 144, screen_height - 68, false);
-//draw_rectangle(146, screen_height - 32, 182, screen_height - 68, false);
 
 draw_set_alpha(1);
 
-var i = 0;
-var j = 0;
+var i = 0; //bag array index
+var j = 0; //pixel index
 while (i < obj_player.bag_size) {
 	var item = obj_player.bag[i];
-	//show_debug_message("item is "+string(item));
 	draw_sprite(item[1], -1, 34 + j, screen_height - 66);
 	i += 1;
 	j += 38;
