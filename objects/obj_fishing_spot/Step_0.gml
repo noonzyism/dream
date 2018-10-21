@@ -9,7 +9,7 @@ if (distance_to_point(mouse_x, mouse_y) < 2) {
 	ui_add_opt(id, "fishing spot", "use ", action);
 }
 
-//change the fish this spot gives every second to a random possibility - there is probably a better way
+//change the fish this spot gives every second to a random possibility - there is no doubt a better way
 //to do this, but it'll do for now (rand once when it's actually fetched rather than constantly keeping track)
 var rand =  random(300);
 

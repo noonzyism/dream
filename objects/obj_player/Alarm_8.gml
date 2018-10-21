@@ -19,14 +19,6 @@ if (target != -1) { //maybe make a more comprehensive check that assures that th
 			}
 			else {
 				notification("Inventory full!");
-			}			
-			
-			//levels[8, 1] += irandom(target.xp); //increase XP
-			levels[8, 1] += 25;
-			if (levels[8, 1] > 100) {
-				levels[8, 1] = 0;
-				levels[8, 0] += 1;
-				notification("Your fishing level is now " + string(levels[8, 0]));
 			}
 			
 			fishing = false;

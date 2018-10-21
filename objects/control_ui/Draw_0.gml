@@ -33,6 +33,7 @@ while (!ds_queue_empty(global.opts)) {
 	
 	draw_set_font(f_stikta12);
 	draw_set_alpha(0.7);
+	draw_set_color(c_white);
 	draw_text_ext_transformed(mouse_x + 32, mouse_y, string(verb) + " " + string(name), 1, 200, 1, 1, -global.cam_angle);
 	
 	if (mouse_check_button_pressed(mb_left)) {

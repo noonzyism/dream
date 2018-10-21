@@ -1,5 +1,3 @@
-//show_debug_message("x: "+string(x)+" y: "+string(y));
-
 //movement logic
 mouse_dir = point_direction(x, y, mouse_x, mouse_y);
 cam_angle = global.cam_angle;
@@ -90,12 +88,10 @@ if abs(x - destx) > 5 || abs(y - desty) > 5 {
 			
 			if (target != -1) {
 				if (distance_to_object(target) >= 16) {
-					//target = -1; //if we were obstructed & not close to our target, reset the target
+					//if we were obstructed & not close to our target, reset the target & cancel actions
 					cancel_actions();
 				}
 			}
 		}
 	}
 }
-
-//show_debug_message("player depth="+string(depth));
