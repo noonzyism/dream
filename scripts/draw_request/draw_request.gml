@@ -1,3 +1,5 @@
+//adds a new draw request to master_draw's queue
+
 {
 	var caller		= argument0; //the calling object's ID
 	var height		= argument1; //the height/level to draw the sprite at

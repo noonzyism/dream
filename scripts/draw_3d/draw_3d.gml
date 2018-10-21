@@ -1,4 +1,5 @@
 //uses variables from the calling object
+//adds the calling object's sprite image indices/layers to the draw queue that's iterated on by master_draw
 
 var spacing = argument0;
 

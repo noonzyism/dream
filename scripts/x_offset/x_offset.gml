@@ -1,3 +1,6 @@
+//useful for converting screen coordinates to real-world coordinates
+//given a horizontal and vertical delta relative to the screen/camera's basis
+//this converts those values to an x component relative to the actual world coordinates basis
 
 var horizontal_delta = argument0;
 var vertical_delta = argument1;

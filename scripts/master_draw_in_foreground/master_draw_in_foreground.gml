@@ -1,3 +1,7 @@
+//calculates whether the given object is in front of or behind the player from the camera's perspective (true = in front, false = behind)
+//MUST BE CALLED FROM WITHIN MASTER_DRAW
+//relies on certain variables that are set within the master_draw object
+
 var obj = argument0;
 
 if (complex == true) {
