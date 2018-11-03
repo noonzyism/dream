@@ -9,10 +9,10 @@ draw_set_alpha(1);
 if (mouse_check_button_pressed(mb_left)) {
 	instance_activate_object(ui_cursor);
 	if (ds_queue_size(global.opts) > 0) {
-		ui_cursor.sprite_index = sprite10;
+		ui_cursor.sprite_index = spr_cursor_action;
 	}
 	else {
-		ui_cursor.sprite_index = sprite9;
+		ui_cursor.sprite_index = spr_cursor;
 	}
 }
 
@@ -33,6 +33,7 @@ while (!ds_queue_empty(global.opts)) {
 	
 	draw_set_font(f_stikta12);
 	draw_set_alpha(0.7);
+	draw_set_color(c_white);
 	draw_text_ext_transformed(mouse_x + 32, mouse_y, string(verb) + " " + string(name), 1, 200, 1, 1, -global.cam_angle);
 	
 	if (mouse_check_button_pressed(mb_left)) {

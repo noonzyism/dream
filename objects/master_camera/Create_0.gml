@@ -26,8 +26,7 @@ surface_resize(application_surface, global.game_width, global.game_height);
 window_set_size(global.game_width, global.game_height);
 
 
-
-
+//camera movement settings - for smoother panning
 cam_velocity = 0;
 cam_accel = 0.2; //acceleration
 cam_deccel = 0.05; //decceleration

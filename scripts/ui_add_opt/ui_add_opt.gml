@@ -11,6 +11,3 @@
 	opt[3] = action;
 	ds_queue_enqueue(global.opts, opt);
 }
-
-
-//draw(caller.sprite, caller.x * xc * layer, caller.y * yc * layer)
