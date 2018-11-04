@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "ef201167-22a4-447e-82a6-46e8de39122f",
+            "Value": {
+                "id": "1085625e-f898-463a-a1c3-c5b6466f56b7",
+                "resourcePath": "scripts\\draw_2d_light\\draw_2d_light.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0a2fee6-e43a-4f4b-848c-070b84bf145d",
             "Value": {
                 "id": "737bf4c7-dd8b-4ffe-a072-27fa68ce7f42",
@@ -894,6 +902,7 @@
         "361583c5-663e-4656-8b6a-5a3173277e7a",
         "181d420e-c2da-4d5b-b0de-1b25ac130f9f",
         "0e24b969-accc-418c-b120-74c364c602b6",
+        "ef201167-22a4-447e-82a6-46e8de39122f",
         "e0ecb59e-fe55-46f8-b84b-ab71f31bc58d",
         "7b190c37-f61b-4306-9314-97c7cba6c563",
         "2739a706-f3eb-4129-b278-04ac6db8fbea",

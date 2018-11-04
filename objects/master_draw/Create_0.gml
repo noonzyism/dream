@@ -9,14 +9,7 @@ drawsequence = ds_list_create();
 light_was_drawn = false;
 
 
-//used for light-emitting objects - make these properties more dynamic/variable on a per-object basis
-radius = 128;
-bloom = 0.4; //the speed of the light bloom
-flicker = 20; //rate at which the light expands/contracts
-
-alarm[0] = flicker;
-
-image_speed = 0.2;
+image_speed = 0.1;
 
 
 

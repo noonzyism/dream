@@ -27,6 +27,7 @@ while (i < count) {
 	spacing =	drawrequest[2];
 	lighting =	drawrequest[3]; //should this sprite emit light?
 	complex =	drawrequest[4]; //depth checking (false = point, true = complex)
+	animate =	drawrequest[5]; //animate the sprite?
 	
 	draw_x = inst.x + height * spacing * xc;
 	draw_y = inst.y - height * spacing * yc;
@@ -55,7 +56,7 @@ while (i < count) {
 	if (lighting) { //emit light
 		gpu_set_blendmode(bm_subtract);
 		surface_set_target(global.light_surface);
-		draw_ellipse_color(draw_x - radius - light_surface_x, draw_y - radius - light_surface_y, draw_x + radius - light_surface_x, draw_y + radius - light_surface_y, c_orange, c_black, false);
+		draw_ellipse_color(draw_x - inst.light_radius - light_surface_x, draw_y - inst.light_radius - light_surface_y, draw_x + inst.light_radius - light_surface_x, draw_y + inst.light_radius - light_surface_y, inst.light_color, c_black, false);
 		surface_reset_target();
 		gpu_set_blendmode(bm_normal);
 		surface_set_target(application_surface);
@@ -108,8 +109,18 @@ while (i < count) {
 		}
 	}
 		
+	//if animating, draw the calling object's sprite/image sequence as an animation
+	//else, we derive the correct image index to draw from the given height, which is our convention for 3d object sprites
+	//typically, we expect animate == true for 2d objects & animate == false for 3d objects
+	if (animate) {
+		subimg = -1;
+	}
+	else {
+		subimg = height;
+	}
+	
 	//draw the sprite for this request
-	draw_sprite_ext(inst.sprite_index, height, draw_x, draw_y, 1, 1, 0, color, 1);
+	draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, 1, 1, 0, color, 1);
 	i += 1;
 }
 

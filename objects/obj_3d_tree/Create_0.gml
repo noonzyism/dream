@@ -3,7 +3,6 @@ draw_3d(2); //the parameter '2' is the spacing value to use in between sprite la
 
 //these variables are REQUIRED to be set for 3d objects
 //they define the boundary box of the object for depth checking
-
 //NOTE: using spr_lamppost for the boundaries because spr_tree has a wide sprite boundary caused by the leaves, 
 //but for the player's purposes we can ignore the leaves as the player should always be drawn under them anyways
 //all we care about is the tree's trunk, which similarly matches the lamppost boundary
