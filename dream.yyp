@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0d19a2de-6f5e-4746-82cc-2f0e6aa5329c",
+            "Value": {
+                "id": "4e37548f-16cf-46b2-9e01-1ee6a55f60e0",
+                "resourcePath": "sprites\\spr_flakes_group\\spr_flakes_group.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e24b969-accc-418c-b120-74c364c602b6",
             "Value": {
                 "id": "30faf79e-5e77-49b2-ba63-ad3d6e57977c",
@@ -178,7 +186,7 @@
             "Key": "24c3b310-f7b1-4384-a2d9-fe5a9a9e3bc8",
             "Value": {
                 "id": "ba298d94-061c-4bb4-9773-73c1849a066b",
-                "resourcePath": "objects\\control_fog\\control_fog.yy",
+                "resourcePath": "objects\\control_weather\\control_weather.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "50f6cfc9-f804-499b-a099-cc9e8b8e116a",
+            "Value": {
+                "id": "f0e4ee45-a437-420a-9d97-b4ede9f11ea5",
+                "resourcePath": "sprites\\spr_specks_white\\spr_specks_white.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58927e8a-ffcc-4251-a7e7-3a2d1af6e46f",
             "Value": {
                 "id": "10597b36-29b2-4f9d-9b0e-857fbda843cf",
@@ -455,6 +471,14 @@
             }
         },
         {
+            "Key": "7cbd378c-0122-490d-a676-1d31be054663",
+            "Value": {
+                "id": "788639e3-af96-4b9f-8ee6-c33e4752bd55",
+                "resourcePath": "sprites\\spr_spotlight\\spr_spotlight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7cf7a2f9-b6e5-4341-8481-4217e9c22b42",
             "Value": {
                 "id": "2d246d98-504a-44f7-aa55-d9c693cdc983",
@@ -540,6 +564,14 @@
                 "id": "f86933de-550f-404c-93d8-d05b22e3ee4c",
                 "resourcePath": "views\\935f99fe-679f-4eb2-905a-8c88da01d869.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9514fcbf-a557-4bda-b6b9-bb8a18e63e78",
+            "Value": {
+                "id": "9f022eb5-3554-4f2b-b2a4-8ad9b8cd8b60",
+                "resourcePath": "sprites\\spr_tiles_basic_snow\\spr_tiles_basic_snow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -650,7 +682,7 @@
             "Key": "acf3ebb3-a45d-4c93-84e0-d5903f8208fc",
             "Value": {
                 "id": "d98a094c-8692-4581-958e-3566cd720922",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourcePath": "tilesets\\ts_basic\\ts_basic.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -804,6 +836,14 @@
                 "id": "4b7ecb6c-c068-4716-9e71-602df3d53773",
                 "resourcePath": "views\\dbf3bc91-619a-4298-8db9-614cd9d7dd3b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc6a8b1e-1b09-4609-b58d-f3423d982e3f",
+            "Value": {
+                "id": "273672cd-a373-41ee-93a7-f9c89e1933b8",
+                "resourcePath": "tilesets\\ts_snow\\ts_snow.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

@@ -9,4 +9,4 @@ for (var i = 0; i < 42; i += 1) {
 
 height = 5;
 
-depth = 250;
+depth = 350;

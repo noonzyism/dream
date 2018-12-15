@@ -11,3 +11,6 @@ instance_create_depth(mouse_x, mouse_y, depth, ui_cursor);
 notifs_count = 0;
 notifs_alpha = 0;
 notif = "";
+
+start_info = true;
+alarm[0] = 600;

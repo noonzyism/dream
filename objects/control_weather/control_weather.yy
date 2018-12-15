@@ -2,7 +2,7 @@
     "id": "24c3b310-f7b1-4384-a2d9-fe5a9a9e3bc8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "control_fog",
+    "name": "control_weather",
     "eventList": [
         {
             "id": "26fa784f-5d81-499f-a321-6adb3d0b7f4b",

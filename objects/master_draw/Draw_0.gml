@@ -17,7 +17,6 @@ player_torso = obj_player.spr_torso;
 player_legs = obj_player.spr_legs;
 player_feet = obj_player.spr_feet;
 
-
 var i = 0;
 var count = ds_list_size(drawsequence);
 while (i < count) {
@@ -56,7 +55,8 @@ while (i < count) {
 	if (lighting) { //emit light
 		gpu_set_blendmode(bm_subtract);
 		surface_set_target(global.light_surface);
-		draw_ellipse_color(draw_x - inst.light_radius - light_surface_x, draw_y - inst.light_radius - light_surface_y, draw_x + inst.light_radius - light_surface_x, draw_y + inst.light_radius - light_surface_y, inst.light_color, c_black, false);
+		//draw_ellipse_color(draw_x - inst.light_radius - light_surface_x, draw_y - inst.light_radius - light_surface_y, draw_x + inst.light_radius - light_surface_x, draw_y + inst.light_radius - light_surface_y, inst.light_color, c_black, false);
+		draw_sprite_ext(spr_spotlight, -1, draw_x - light_surface_x, draw_y - light_surface_y, inst.light_radius/64, inst.light_radius/64, 0, inst.light_color, 1);
 		surface_reset_target();
 		gpu_set_blendmode(bm_normal);
 		surface_set_target(application_surface);

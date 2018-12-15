@@ -24,13 +24,16 @@ Included in this project:
 3. Day & Night cycling
 	-progressive shifting between darkness and daytime
 	
-4. Basic Inventory & Item system
+4. Weather Effects
+	fog and snow effects (toggle with num keys 1,2,3)
+	
+5. Basic Inventory & Item system
 
-5. Basic Skill & Action system
+6. Basic Skill & Action system
 
-6. Tile-based collision detection (collision_map)
+7. Tile-based collision detection (collision_map)
 
-7. Various sprite & tile resources free for your usage
+8. Various sprite & tile resources free for your usage
 
 -----
 
@@ -39,6 +42,8 @@ Controls:
 Left & Right arrow keys for rotating camera
 
 Point & Click using mouse for movement & selection
+
+1,2,3 number keys for toggling snow and fog effects
 
 -----
 
