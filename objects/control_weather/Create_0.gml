@@ -16,7 +16,6 @@ height = 5;
 //Snow
 
 snow_particle = spr_flakes_group;
-snow_particle_frames = snow_particle.image_number;
 snow_saturation = 100;
 snow_started = false;
 snowing = true;
