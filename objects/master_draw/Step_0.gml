@@ -13,6 +13,21 @@ player_torso_y	= player_y - 24*yc;
 player_head_x	= player_x + 47*xc;
 player_head_y	= player_y - 47*yc;
 
+
+/* ALTITUDE test code
+altitude = (master_camera.cam_modifier - 1) * 200;
+
+player_feet_x	= player_x + altitude*xc*master_camera.cam_modifier;
+player_feet_y	= player_y - altitude*yc*master_camera.cam_modifier;
+player_legs_x	= player_x + (7+altitude)*xc*master_camera.cam_modifier;
+player_legs_y	= player_y - (7+altitude)*yc*master_camera.cam_modifier;
+player_torso_x	= player_x + (24+altitude)*xc*master_camera.cam_modifier;
+player_torso_y	= player_y - (24+altitude)*yc*master_camera.cam_modifier;
+player_head_x	= player_x + (47+altitude)*xc*master_camera.cam_modifier;
+player_head_y	= player_y - (47+altitude)*yc*master_camera.cam_modifier;
+
+*/
+
 //some sprite box collision variables for the player
 
 feet_tl_x = player_feet_x + x_offset(obj_player.left_feet_offset, obj_player.top_feet_offset);

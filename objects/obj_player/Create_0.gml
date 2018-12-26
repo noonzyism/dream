@@ -4,12 +4,15 @@ desty = y;
 velocity = 3.5; //speed at which the player moves
 move_angle = 0;
 depth = -8;
+moving = false;
 
 //sprite/drawing variables
 spr_feet	= spr_player_feet;
 spr_legs	= spr_player_legs;
 spr_torso	= spr_player_torso;
 spr_head	= spr_player_head;
+
+image_speed = 0.1;
 
 image_xscale = 0.5;
 image_yscale = 0.5;

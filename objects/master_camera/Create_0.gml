@@ -31,3 +31,6 @@ cam_velocity = 0;
 cam_accel = 0.2; //acceleration
 cam_deccel = 0.05; //decceleration
 cam_max_velocity = 2;
+
+//ALTITUDE TEST code
+cam_modifier = 1;

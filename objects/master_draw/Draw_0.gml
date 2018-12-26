@@ -35,19 +35,19 @@ while (i < count) {
 		//at a height of 50, the player can safely be drawn because its "height" never goes beyond this value
 		//in other words, if a "you must be this tall to ride" sign was at 50 units, our player would be sad
 		if (!player_drawn[0]) {
-			draw_sprite_ext(player_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[0] = true;
 		}
 		if (!player_drawn[1]) {
-			draw_sprite_ext(player_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[1] = true;
 		}
 		if (!player_drawn[2]) {
-			draw_sprite_ext(player_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[2] = true;
 		}
 		if (!player_drawn[3]) {
-			draw_sprite_ext(player_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
 		}
 	}
@@ -80,7 +80,7 @@ while (i < count) {
 		if	(!player_drawn[0]
 			&& master_draw_overlap_exists(player_feet_x, player_feet_y, 13))
 		{
-			draw_sprite_ext(player_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[0] = true;
 		}
 		
@@ -88,7 +88,7 @@ while (i < count) {
 		if	(!player_drawn[1]
 			&& master_draw_overlap_exists(player_legs_x, player_legs_y, 13))
 		{
-			draw_sprite_ext(player_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[1] = true;
 		}
 		
@@ -96,7 +96,7 @@ while (i < count) {
 		if	(!player_drawn[2]
 			&& master_draw_overlap_exists(player_torso_x, player_torso_y, 20))
 		{
-			draw_sprite_ext(player_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[2] = true;
 		}
 		
@@ -104,7 +104,7 @@ while (i < count) {
 		if	(!player_drawn[3]
 			&& master_draw_overlap_exists(player_head_x, player_head_y, 18))
 		{
-			draw_sprite_ext(player_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
 		}
 	}

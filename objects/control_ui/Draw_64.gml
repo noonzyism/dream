@@ -53,6 +53,7 @@ while (i < obj_player.bag_size) {
 if (start_info) {
 	draw_set_color(c_orange);
 	draw_set_font(f_stikta18);
-	draw_text_ext_transformed(32, 550, string("Lucid Pseudo 3d Engine"), 1, 500, 1, 1, 0);
-	draw_text_ext_transformed(32, 600, string("Use [1,2,3] to toggle weather effects"), 1, 500, 0.75, 0.75, 0);
+	draw_text_ext_transformed(32, 500, string("Lucid Pseudo 3d Engine"), 1, 500, 1, 1, 0);
+	draw_text_ext_transformed(32, 550, string("Use [1,2,3] to toggle weather effects"), 1, 500, 0.75, 0.75, 0);
+	draw_text_ext_transformed(32, 600, string("Use [4] to increment time of day"), 1, 500, 0.75, 0.75, 0);
 }

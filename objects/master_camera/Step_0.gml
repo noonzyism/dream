@@ -40,3 +40,22 @@ global.screen_vertical_unit_vector_y = lengthdir_y(1, global.cam_angle - 90);
 
 global.view_upper_y = lengthdir_y(global.view_diameter/2, global.cam_angle - 90);
 global.view_upper_x = lengthdir_x(global.view_diameter/2, global.cam_angle - 90);
+
+/*
+//ALTITUDE TEST CODE
+if (keyboard_check(vk_up)) {
+	cam_modifier += 0.005;
+}
+
+if (keyboard_check(vk_down)) {
+	if (cam_modifier > 1) {
+		cam_modifier -= 0.005;
+	}
+}
+
+
+
+obj_player.image_xscale = 0.5 * cam_modifier;
+obj_player.image_yscale = 0.5 * cam_modifier;
+
+//camera_set_view_size(global.cam, global.game_width * cam_modifier, global.game_height * cam_modifier);

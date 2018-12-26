@@ -12,7 +12,8 @@
         "58927e8a-ffcc-4251-a7e7-3a2d1af6e46f",
         "72cba5e7-4daf-4640-a7e1-cddfab5b0539",
         "acacff55-8bf1-469f-a7ed-488bc820a5b9",
-        "2c40358a-5d11-40c9-b92a-2f6a309cdfad"
+        "2c40358a-5d11-40c9-b92a-2f6a309cdfad",
+        "f0afe599-0362-464a-837c-26a52cd22148"
     ],
     "filterType": "GMObject",
     "folderName": "Basic Game Objects",

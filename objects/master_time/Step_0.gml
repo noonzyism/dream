@@ -24,3 +24,10 @@ if (month >= 12) {
 	year += 1;
 	month = 1;
 }
+
+//Keyboard toggles
+
+if keyboard_check_pressed(ord("4")) {
+	hour += 1;
+	notification("Hour: "+string(hour));
+}

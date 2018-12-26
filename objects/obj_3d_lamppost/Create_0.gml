@@ -15,3 +15,5 @@ left_offset = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_ind
 right_offset = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
 bottom_offset = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
 top_offset = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
+
+instance_create_depth(x, y, 350, obj_3d_lamppost_reflection);
