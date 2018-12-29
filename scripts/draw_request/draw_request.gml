@@ -14,5 +14,5 @@
 	request[3] = lighting;
 	request[4] = complex;
 	request[5] = animate;
-	ds_priority_add(global.drawstack_3d, request, -height);
+	ds_priority_add(global.drawstack_3d, request, -(height*spacing));
 }
