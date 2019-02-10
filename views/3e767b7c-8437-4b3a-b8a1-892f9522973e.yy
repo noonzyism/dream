@@ -10,7 +10,9 @@
         "8010156e-f8d7-446b-ad1b-a3d1930bca17",
         "7cbd378c-0122-490d-a676-1d31be054663",
         "679610a6-18a0-4a3f-a9b9-13c4233e482e",
-        "1578f04b-a96d-46d3-990c-5f91e204ad7e"
+        "1578f04b-a96d-46d3-990c-5f91e204ad7e",
+        "89aff2f8-c31e-4412-8760-4b0498cd0770",
+        "d6486444-4d12-4d26-8fbc-e487ab39c34e"
     ],
     "filterType": "GMSprite",
     "folderName": "Misc\/Multipurpose",

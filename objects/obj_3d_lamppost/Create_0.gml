@@ -1,6 +1,7 @@
 //2 is the spacing value to use in between sprite layers
 //45 is the level to emit a light at
 draw_3d_light(2, 45);
+//draw_3d_complex(2);
 
 //light_color and light_radius are REQUIRED to be set in the create event if calling draw_2d_light/draw_3d_light
 //they are used to determine the emitted light characteristics

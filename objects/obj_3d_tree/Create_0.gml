@@ -1,4 +1,5 @@
 draw_3d(2); //the parameter '2' is the spacing value to use in between sprite layers
+//draw_3d_complex(2);
 
 
 //these variables are REQUIRED to be set for 3d objects

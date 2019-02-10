@@ -9,7 +9,7 @@ for (var i = 0; i < 42; i += 1) {
 	fogspeed[i] = random(2);
 }
 
-fogging = true;
+fogging = false;
 
 height = 5;
 
@@ -18,7 +18,7 @@ height = 5;
 snow_particle = spr_flakes_group;
 snow_saturation = 100;
 snow_started = false;
-snowing = true;
+snowing = false;
 snowing_fog = false;
 
 image_speed = 0.1;

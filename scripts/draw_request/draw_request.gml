@@ -16,3 +16,4 @@
 	request[5] = animate;
 	ds_priority_add(global.drawstack_3d, request, -(height*spacing));
 }
+

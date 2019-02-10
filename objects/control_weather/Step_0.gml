@@ -7,6 +7,27 @@ ui_xmodifier = (height)*sin(camx*pi/180);
 ui_ymodifier = (height)*cos(camx*pi/180);
 
 
+////////////////////
+// Weather Toggles
+///////////////////
+
+if keyboard_check_pressed(ord("1")) {
+	snowing = !snowing;
+	notification("Snow: "+string(snowing));
+	layer_set_visible(snow_layer, snowing);
+}
+
+if keyboard_check_pressed(ord("2")) {
+	snowing_fog = !snowing_fog;
+	notification("Snow fog: "+string(snowing_fog));
+}
+
+if keyboard_check_pressed(ord("3")) {
+	fogging = !fogging;
+	notification("Fog: "+string(fogging));
+}
+
+
 
 ///////////////////////////////////////////////////////
 // FOG
@@ -52,24 +73,4 @@ if (snowing) {
 			snowy[i] += y_offset(0, snowspeed[i]);
 		}
 	}
-}
-
-////////////////////
-// Weather Toggles
-///////////////////
-
-if keyboard_check_pressed(ord("1")) {
-	snowing = !snowing;
-	notification("Snow: "+string(snowing));
-	layer_set_visible(snow_layer, snowing);
-}
-
-if keyboard_check_pressed(ord("2")) {
-	snowing_fog = !snowing_fog;
-	notification("Snow fog: "+string(snowing_fog));
-}
-
-if keyboard_check_pressed(ord("3")) {
-	fogging = !fogging;
-	notification("Fog: "+string(fogging));
 }
