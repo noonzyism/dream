@@ -21,15 +21,22 @@ var i = 0;
 var count = ds_list_size(drawsequence);
 while (i < count) {
 	drawrequest = ds_list_find_value(drawsequence, i);
+	/*
 	inst =		drawrequest[0];
 	height =	drawrequest[1];
 	spacing =	drawrequest[2];
 	lighting =	drawrequest[3]; //should this sprite emit light?
 	complex =	drawrequest[4]; //depth checking (false = point, true = complex)
 	animate =	drawrequest[5]; //animate the sprite?
+	*/
+	inst =		drawrequest[0];
+	subimg =	drawrequest[1];
+	height =	drawrequest[2];
+	lighting =	drawrequest[3];
+	complex =	drawrequest[4];
 	
-	draw_x = inst.x + height * spacing * xc;
-	draw_y = inst.y - height * spacing * yc;
+	draw_x = inst.x + height * xc;
+	draw_y = inst.y - height * yc;
 	
 	if (height >= 50) {
 		//at a height of 50, the player can safely be drawn because its "height" never goes beyond this value
@@ -108,16 +115,6 @@ while (i < count) {
 			player_drawn[3] = true;
 		}
 	}
-		
-	//if animating, draw the calling object's sprite/image sequence as an animation
-	//else, we derive the correct image index to draw from the given height, which is our convention for 3d object sprites
-	//typically, we expect animate == true for 2d objects & animate == false for 3d objects
-	if (animate) {
-		subimg = -1;
-	}
-	else {
-		subimg = height;
-	}
 	
 	//draw the sprite for this request
 	draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, 1, 1, 0, color, 1);
@@ -152,4 +149,4 @@ if (!player_drawn[3]) {
 	player_drawn[3] = true;
 }
 
-//gpu_set_tex_filter(true);
+gpu_set_tex_filter(true);

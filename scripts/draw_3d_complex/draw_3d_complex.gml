@@ -7,6 +7,6 @@ layer_count = sprite_get_number(sprite_index);
 
 var i = 0;
 while (i < layer_count) {
-	draw_request(id, i, spacing, false, true, false);
+	draw_request(id, i, (i * spacing), false, true);
 	i += 1;
 }

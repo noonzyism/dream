@@ -1,6 +1,6 @@
 var rand = random(25);
 
-draw_3d_at(1, 25);
+draw_3d_at(25, 150 + rand);
 
 //these 4 variables are required for all objects using the draw_3d/draw_2d functions
 left_offset = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);

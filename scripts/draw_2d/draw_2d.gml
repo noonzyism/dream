@@ -3,4 +3,4 @@
 
 var height = argument0;
 
-draw_request(id, height, 1, false, false, true);
+draw_request(id, -1, height, false, false);
