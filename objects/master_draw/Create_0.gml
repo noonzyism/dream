@@ -17,3 +17,8 @@ image_speed = 0.1;
 //WARN: they get set in the step event just once (since the values they rely on are mostly unchanged once the game start - should that change, they need to be fetched on every step event/change instead)
 surface_offset_x = -1;
 surface_offset_y = -1;
+
+
+
+//WIP TESTING HOME-MADE CAMERA SOLUTION
+global.my_cam_angle = 0;

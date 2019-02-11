@@ -1,6 +1,30 @@
 //used for calculating 3d projections
-xc = sin(global.cam_angle * pi/180);
-yc = cos(global.cam_angle * pi/180);
+//xc = sin(global.cam_angle * pi/180);
+//yc = cos(global.cam_angle * pi/180);
+
+if (global.my_cam_angle > 360) {
+	global.my_cam_angle -= 360;
+}
+if (global.my_cam_angle < -360) {
+	global.my_cam_angle += 360;
+}
+
+//WIP TESTING HOME-MADE CAMERA SOLUTION
+if (keyboard_check(vk_right)) {
+	global.my_cam_angle -= 2;
+}
+
+if (keyboard_check(vk_left)) {
+	global.my_cam_angle += 2;
+}
+
+
+xc = 0;
+yc = 1;
+
+
+///////////////////////////////////////////
+
 
 player_x		= obj_player.x;
 player_y		= obj_player.y;

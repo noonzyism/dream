@@ -13,3 +13,14 @@ left_offset = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_ind
 right_offset = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
 bottom_offset = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
 top_offset = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
+
+
+//WIP testing home-grown camera rotation code
+//holds the offset from the player, which we're treating as the camera rotation origin for now
+init_x = x - obj_player.x;
+init_y = y - obj_player.y;
+delta_x = x - obj_player.x;
+delta_y = y - obj_player.y;
+delta = distance_to_object(obj_player);
+
+init_angle = point_direction(obj_player.x, obj_player.y, x, y);

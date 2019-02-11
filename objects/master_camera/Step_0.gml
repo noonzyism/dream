@@ -27,7 +27,9 @@ if !keyboard_check(vk_left) && !keyboard_check(vk_right) {
 }
 
 global.cam_angle += cam_velocity;
-camera_set_view_angle(global.cam, global.cam_angle);
+//camera_set_view_angle(global.cam, global.cam_angle);
+
+
 global.cam_x = camera_get_view_x(global.cam);
 global.cam_y = camera_get_view_y(global.cam);
 

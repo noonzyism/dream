@@ -11,3 +11,13 @@ left_offset = sprite_get_bbox_left(spr_lamppost) - sprite_get_xoffset(spr_lamppo
 right_offset = sprite_get_bbox_right(spr_lamppost) - sprite_get_xoffset(spr_lamppost);
 bottom_offset = sprite_get_bbox_bottom(spr_lamppost) - sprite_get_yoffset(spr_lamppost);
 top_offset = sprite_get_bbox_top(spr_lamppost) - sprite_get_yoffset(spr_lamppost);
+
+
+//WIP testing home-grown camera rotation code
+//holds the offset from the player, which we're treating as the camera rotation origin for now
+init_x = x - obj_player.x;
+init_y = y - obj_player.y;
+delta = distance_to_object(obj_player);
+delta_x = x - obj_player.x;
+delta_y = y - obj_player.y;
+init_angle = point_direction(obj_player.x, obj_player.y, x, y);

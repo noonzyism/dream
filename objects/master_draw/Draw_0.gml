@@ -117,7 +117,7 @@ while (i < count) {
 	}
 	
 	//draw the sprite for this request
-	draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, 1, 1, 0, color, 1);
+	draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, 1, 1, global.my_cam_angle, color, 1);
 	i += 1;
 }
 
