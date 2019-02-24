@@ -1,28 +1,18 @@
 {
-    "id": "053f1507-5b66-40ed-bcb9-d1eef399d22d",
+    "id": "88a0391c-2cd2-4fa5-876f-4adc16287d76",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_3d_treetop_test",
+    "name": "obj_waterflow",
     "eventList": [
         {
-            "id": "76da2a5c-a358-4f1b-8296-715f7846b343",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "053f1507-5b66-40ed-bcb9-d1eef399d22d"
-        },
-        {
-            "id": "16bdfa43-1dfb-4440-a9cc-f7ca7ae808aa",
+            "id": "69c4556e-112f-4087-a442-3831a1a77a87",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "053f1507-5b66-40ed-bcb9-d1eef399d22d"
+            "m_owner": "88a0391c-2cd2-4fa5-876f-4adc16287d76"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -41,8 +31,10 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
-    "spriteId": "89aff2f8-c31e-4412-8760-4b0498cd0770",
+    "spriteId": "b728efac-d5f0-4d69-9ea2-342b7caee0fc",
     "visible": true
 }

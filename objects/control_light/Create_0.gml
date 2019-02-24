@@ -6,6 +6,6 @@ radius = 164;
 
 registered = false;
 
-global.light_level = 60; //the level that the light surface layer will be at
+global.light_level = 120; //the level that the light surface layer will be at
 
 global.ambient_color = c_dkgray;
