@@ -1,4 +1,5 @@
 /// @description mining action
+// TODO this logic has a lot of entropy, need to cleanup
 
 if (target != -1) { //maybe make a more comprehensive check that assures that the target object is a mine-able rock/relevant to the action
 	
@@ -44,7 +45,7 @@ if (target != -1) { //maybe make a more comprehensive check that assures that th
 		timer = -1;
 		alarm[9] = -1;
 	}
-	else {
+	else if (distance_to_object(target) < 1) {
 		timer -= 1;
 		alarm[9] = 1;
 	}

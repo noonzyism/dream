@@ -34,9 +34,12 @@ while (i < count) {
 	height =	drawrequest[2];
 	lighting =	drawrequest[3];
 	complex =	drawrequest[4];
+	slice_pos =	drawrequest[5];
 	
 	draw_x = inst.x + height * xc;
 	draw_y = inst.y - height * yc;
+	draw_xalt = inst.x + height * yc;
+	draw_yalt = inst.y - height * xc;
 	
 	if (height >= 50) {
 		//at a height of 50, the player can safely be drawn because its "height" never goes beyond this value
@@ -117,7 +120,67 @@ while (i < count) {
 	}
 	
 	//draw the sprite for this request
-	draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, 1, 1, 0, color, 1);
+	if (slice_pos == -1) {
+		// drawing full sprite
+		draw_sprite_ext(inst.sprite_index, subimg, draw_x, draw_y, inst.image_xscale, inst.image_yscale, 0, color, 1);
+	}
+	else {
+		// drawing a single slice of a sprite (used for textures)
+		draw_sprite_part_ext(inst.sprite_index, 
+						 subimg, 
+						 0, 
+						 slice_pos, 
+						 inst.sprite_width, 
+						 1,  //TODO: hard-coded spacing for now
+						 draw_x,
+						 draw_y,
+						 1,
+						 1,
+						 color,
+						 1);
+						 
+		draw_sprite_part_ext(inst.sprite_index, 
+						 subimg, 
+						 slice_pos, 
+						 0, 
+						 1, //TODO: hard-coded spacing for now
+						 inst.sprite_height,  
+						 draw_x,
+						 draw_y,
+						 1,
+						 1,
+						 color,
+						 1);		
+
+		draw_sprite_part_ext(inst.sprite_index, 
+						 subimg, 
+						 0, 
+						 slice_pos, 
+						 inst.sprite_width, 
+						 1,  //TODO: hard-coded spacing for now
+						 draw_x,
+						 draw_y + inst.sprite_height - 1,
+						 1,
+						 1,
+						 color,
+						 1);;
+						 
+		draw_sprite_part_ext(inst.sprite_index, 
+						 subimg, 
+						 slice_pos, 
+						 0, 
+						 1, //TODO: hard-coded spacing for now
+						 inst.sprite_height,  
+						 draw_x + inst.sprite_width - 1,
+						 draw_y,
+						 1,
+						 1,
+						 color,
+						 1);
+						 
+
+	}
+	
 	i += 1;
 }
 

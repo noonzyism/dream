@@ -1,4 +1,5 @@
 /// @description fishing action
+// TODO this logic has a lot of entropy, need to cleanup
 
 if (target != -1) { //maybe make a more comprehensive check that assures that the target object is fish-able/relevant to the action
 	
@@ -35,7 +36,7 @@ if (target != -1) { //maybe make a more comprehensive check that assures that th
 		timer = -1;
 		alarm[8] = -1;
 	}
-	else {
+	else if (distance_to_object(target) < 24) {
 		timer -= 1;
 		alarm[8] = 1;
 	}

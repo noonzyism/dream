@@ -9,7 +9,9 @@
         "a7191af5-11ff-4609-9432-66ee47afb8e0",
         "7cf7a2f9-b6e5-4341-8481-4217e9c22b42",
         "a54a7694-dc92-4b09-840a-98edeb726cd5",
-        "2c7cec86-cfe3-4c7e-a9d1-8b3228a730df"
+        "2c7cec86-cfe3-4c7e-a9d1-8b3228a730df",
+        "6521e898-0dbb-46d4-967e-46fb96e7c829",
+        "1a774224-d5b1-4160-968b-709063e1ccaa"
     ],
     "filterType": "GMObject",
     "folderName": "Pseudo 3D",

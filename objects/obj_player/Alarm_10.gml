@@ -18,7 +18,4 @@ if (target != -1) {
 			notification("Inventory is full!");
 		}
 	}
-	else {
-		alarm[10] = 1; //check again next step
-	}
 }

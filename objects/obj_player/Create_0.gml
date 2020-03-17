@@ -38,9 +38,6 @@ right_head_offset = (sprite_get_bbox_right(spr_head) - sprite_get_xoffset(spr_he
 bottom_head_offset = (sprite_get_bbox_bottom(spr_head) - sprite_get_yoffset(spr_head)) * image_yscale;
 top_head_offset = (sprite_get_bbox_top(spr_head) - sprite_get_yoffset(spr_head)) * image_yscale;
 
-mouse_dir = point_direction(x, y, mouse_x, mouse_y);
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //action variables (used by action alarms)
 ///////////////////////////////////////////////////////////////////////////////////////////////

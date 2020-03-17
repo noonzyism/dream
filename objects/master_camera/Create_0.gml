@@ -8,9 +8,7 @@ view_enabled = true;
 
 view_set_visible(0, true);
 
-instance_create_depth(obj_player.x, obj_player.y, depth, obj_cam_target);
-
-global.cam = camera_create_view(300, 300, global.game_width, global.game_height, 0, obj_cam_target, -1, -1, global.game_width/2, global.game_height/2);
+global.cam = camera_create_view(300, 300, global.game_width, global.game_height, 0, obj_player, -1, -1, global.game_width/2, global.game_height/2);
 global.cam_angle = 0;
 global.cam_x = 0;
 global.cam_y = 0;

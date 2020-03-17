@@ -1,13 +1,46 @@
 //movement logic
-mouse_dir = point_direction(x, y, mouse_x, mouse_y);
-cam_angle = global.cam_angle;
-image_angle = -cam_angle;
-if (destx != x) && (desty != y) {
-	move_angle = point_direction(x, y, destx, desty) - 270;
+CAM_ANGLE = global.cam_angle;
+
+destx = x;
+desty = y;
+
+if keyboard_check(ord("W")) {
+	destx += lengthdir_x(velocity, CAM_ANGLE - 90);
+	desty -= lengthdir_y(velocity, CAM_ANGLE - 90);
+}
+if keyboard_check(ord("S")) {
+	destx -= lengthdir_x(velocity, CAM_ANGLE - 90);
+	desty += lengthdir_y(velocity, CAM_ANGLE - 90);
+}
+if keyboard_check(ord("A")) {
+	destx -= lengthdir_x(velocity, CAM_ANGLE);
+	desty += lengthdir_y(velocity, CAM_ANGLE);
+}
+if keyboard_check(ord("D")) {
+	destx += lengthdir_x(velocity, CAM_ANGLE);
+	desty -= lengthdir_y(velocity, CAM_ANGLE);
 }
 
-face_direction = (move_angle + cam_angle) mod 360;
-//show_debug_message("face direction: "+string(face_direction));
+if (destx != x) || (desty != y) {
+	moving = true;
+	move_angle = point_direction(x, y, destx, desty) - 270;
+}
+else {
+	moving = false;
+}
+
+if (moving) {
+	image_speed = 1;
+}
+else {
+	image_speed = 0.1;
+}
+
+x = destx;
+y = desty;
+
+image_angle = -CAM_ANGLE;
+face_direction = (move_angle + CAM_ANGLE) mod 360;
 
 if face_direction >= 0 &&  face_direction < 22.5  {
 	//image_index = 3;
@@ -138,6 +171,7 @@ if face_direction <= -337.5 {
 	spr_feet = asset_get_index("spr_feet_base_" + string(moving ? "run" : "idle") + "_b");
 }
 
+/*
 if mouse_check_button(mb_left) {
 	destx = mouse_x;
 	desty = mouse_y;
@@ -175,9 +209,5 @@ else {
 	moving = false;
 }
 
-if (moving) {
-	image_speed = 1;
-}
-else {
-	image_speed = 0.1;
-}
+*/
+
