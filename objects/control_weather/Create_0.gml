@@ -1,5 +1,5 @@
-camx = global.cam_angle;
-camy = global.cam_angle;
+camx = 0;
+camy = 0;
 
 //Fog
 

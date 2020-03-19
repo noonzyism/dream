@@ -7,6 +7,6 @@ velocity		default = 1;	// the speed of the emitted waterflow
 rate			default = 250;	// a positive value indicating the rate of waterflow emission (lower value = faster)
 */
 
-depth = 350;
+depth = 5;
 
 alarm[0]		= 1;

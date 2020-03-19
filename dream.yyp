@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "7f39a7c1-b94d-4857-8aa0-cdbdb26505b1",
+            "Value": {
+                "id": "88217e38-e3c9-44e8-9512-93b55ff0cdc1",
+                "resourcePath": "objects\\master_3d_camera\\master_3d_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8010156e-f8d7-446b-ad1b-a3d1930bca17",
             "Value": {
                 "id": "4ad3546d-7ead-4c77-8205-417eb6d376c1",

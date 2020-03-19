@@ -36,41 +36,42 @@ while (i < count) {
 	complex =	drawrequest[4];
 	slice_pos =	drawrequest[5];
 	
-	draw_x = inst.x + height * xc;
-	draw_y = inst.y - height * yc;
-	draw_xalt = inst.x + height * yc;
-	draw_yalt = inst.y - height * xc;
+	delta_x = (inst.x - obj_player.x)/view_radius; //a value within (-1, 1) indicates the x is on the screen
+	delta_y = (inst.y - obj_player.y)/view_radius; //a value within (-1, 1) indicates the y is on the screen
+	
+	draw_x = inst.x + (height * xc) + (delta_x * height);
+	draw_y = inst.y - (height * yc) + (delta_y * height);
 	
 	if (height >= 50) {
 		//at a height of 50, the player can safely be drawn because its "height" never goes beyond this value
 		//in other words, if a "you must be this tall to ride" sign was at 50 units, our player would be sad
 		if (!player_drawn[0]) {
-			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[0] = true;
 		}
 		if (!player_drawn[1]) {
-			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[1] = true;
 		}
 		if (!player_drawn[2]) {
-			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[2] = true;
 		}
 		if (!player_drawn[3]) {
-			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
 		}
 	}
 	
-	if (lighting) { //emit light
+	if (false) { //emit light
 		gpu_set_blendmode(bm_subtract);
 		surface_set_target(global.light_surface);
 		//draw_ellipse_color(draw_x - inst.light_radius - light_surface_x, draw_y - inst.light_radius - light_surface_y, draw_x + inst.light_radius - light_surface_x, draw_y + inst.light_radius - light_surface_y, inst.light_color, c_black, false);
 		draw_sprite_ext(spr_spotlight, -1, draw_x - light_surface_x, draw_y - light_surface_y, inst.light_radius/64, inst.light_radius/64, 0, inst.light_color, 1);
-		surface_reset_target();
 		gpu_set_blendmode(bm_normal);
-		surface_set_target(application_surface);
 		surface_reset_target();
+		//surface_set_target(application_surface);
+		//surface_reset_target();
 	}
 	
 	//draw light surface if all remaining requests are above the light surface
@@ -90,7 +91,7 @@ while (i < count) {
 		if	(!player_drawn[0]
 			&& master_draw_overlap_exists(player_feet_x, player_feet_y, 13))
 		{
-			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[0] = true;
 		}
 		
@@ -98,7 +99,7 @@ while (i < count) {
 		if	(!player_drawn[1]
 			&& master_draw_overlap_exists(player_legs_x, player_legs_y, 13))
 		{
-			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[1] = true;
 		}
 		
@@ -106,7 +107,7 @@ while (i < count) {
 		if	(!player_drawn[2]
 			&& master_draw_overlap_exists(player_torso_x, player_torso_y, 20))
 		{
-			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[2] = true;
 		}
 		
@@ -114,7 +115,7 @@ while (i < count) {
 		if	(!player_drawn[3]
 			&& master_draw_overlap_exists(player_head_x, player_head_y, 18))
 		{
-			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+			draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 			player_drawn[3] = true;
 		}
 	}
@@ -131,7 +132,7 @@ while (i < count) {
 						 0, 
 						 slice_pos, 
 						 inst.sprite_width, 
-						 1,  //TODO: hard-coded spacing for now
+						 2,  //TODO: hard-coded spacing for now
 						 draw_x,
 						 draw_y,
 						 1,
@@ -143,7 +144,7 @@ while (i < count) {
 						 subimg, 
 						 slice_pos, 
 						 0, 
-						 1, //TODO: hard-coded spacing for now
+						 2, //TODO: hard-coded spacing for now
 						 inst.sprite_height,  
 						 draw_x,
 						 draw_y,
@@ -157,7 +158,7 @@ while (i < count) {
 						 0, 
 						 slice_pos, 
 						 inst.sprite_width, 
-						 1,  //TODO: hard-coded spacing for now
+						 2,  //TODO: hard-coded spacing for now
 						 draw_x,
 						 draw_y + inst.sprite_height - 1,
 						 1,
@@ -169,7 +170,7 @@ while (i < count) {
 						 subimg, 
 						 slice_pos, 
 						 0, 
-						 1, //TODO: hard-coded spacing for now
+						 2, //TODO: hard-coded spacing for now
 						 inst.sprite_height,  
 						 draw_x + inst.sprite_width - 1,
 						 draw_y,
@@ -196,20 +197,21 @@ if (light_was_drawn == false) {
 
 //draw player if it wasn't drawn in the iteration above
 if (!player_drawn[0]) {
-	draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+	draw_sprite_ext(obj_player.spr_feet, obj_player.image_index, player_feet_x, player_feet_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 	player_drawn[0] = true;
 }
 if (!player_drawn[1]) {
-	draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+	draw_sprite_ext(obj_player.spr_legs, obj_player.image_index, player_legs_x, player_legs_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 	player_drawn[1] = true;
 }
 if (!player_drawn[2]) {
-	draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+	draw_sprite_ext(obj_player.spr_torso, obj_player.image_index, player_torso_x, player_torso_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 	player_drawn[2] = true;
 }
 if (!player_drawn[3]) {
-	draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, obj_player.image_xscale, obj_player.image_yscale, obj_player.image_angle, c_white, 1);
+	draw_sprite_ext(obj_player.spr_head, obj_player.image_index, player_head_x, player_head_y, 0.5, 0.5, obj_player.image_angle, c_white, 1);
 	player_drawn[3] = true;
 }
 
 gpu_set_tex_filter(true);
+//surface_reset_target();

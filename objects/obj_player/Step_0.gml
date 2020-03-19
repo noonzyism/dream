@@ -1,6 +1,6 @@
-//movement logic
 CAM_ANGLE = global.cam_angle;
 
+//movement logic
 destx = x;
 desty = y;
 

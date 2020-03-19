@@ -5,6 +5,7 @@ velocity = 3.5; //speed at which the player moves
 move_angle = 0;
 depth = -8;
 moving = false;
+CAM_ANGLE = 0;
 
 //sprite/drawing variables
 spr_feet	= spr_player_feet;

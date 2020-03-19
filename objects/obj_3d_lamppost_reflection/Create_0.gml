@@ -4,7 +4,7 @@ spacing = 2;
 
 light_level = 45;
 
-depth = 350;
+depth = 5;
 
 last_cam_angle = 0;
 
